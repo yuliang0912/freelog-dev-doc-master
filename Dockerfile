@@ -12,6 +12,7 @@ COPY . /gitbook
 
 RUN npm install --global gitbook-cli &&\
 	gitbook fetch ${VERSION} &&\
+	gitbook install --save
 
 EXPOSE 4000 35729
 
