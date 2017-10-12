@@ -6,6 +6,9 @@
 
 ## 项目初始化
 
+   npm install --global gitbook-cli
+   npm install --save
+
    gitbook init
 
 
