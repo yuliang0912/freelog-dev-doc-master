@@ -7,6 +7,7 @@
 ## 项目初始化
 
    npm install --global gitbook-cli
+
    npm install --save
 
    gitbook init
@@ -16,6 +17,17 @@
 
    gitbook serve
 
+
+## 编码格式
+
+全站使用utf-8格式的编码
+
+
+## 接口地址:
+
+* 外网地址：[http://api.freelog.com](https://api.freelog.com)
+
+* 内网地址：[http://192.168.0.3:1201](http://192.168.0.3:1201)
 
 
 
