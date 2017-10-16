@@ -13,6 +13,8 @@
     * [查看策略详情](policy/查看策略详情.md)
 * [合同](contract/README.md)
     * [创建合同](contract/创建合同.md)
+    * [查看合同详情](contract/查看合同详情.md)
+    * [查看合同列表](contract/查看合同列表.md)
 * [节点](node/README.md)
     * [创建节点](node/创建节点.md)
     * [查看节点详情](node/查看节点详情.md)
