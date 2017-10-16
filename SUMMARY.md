@@ -16,6 +16,7 @@
 * [节点](node/README.md)
     * [创建节点](node/创建节点.md)
     * [查看节点详情](node/查看节点详情.md)
+    * [查看节点列表](node/查看节点列表.md)
 * [presentable](presentable/README.md)
     * [查看节点的presentable列表](presentable/查看节点的presentable列表.md)
 * [附表](附表/README.md)
