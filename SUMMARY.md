@@ -25,7 +25,6 @@
     * [创建presentable](presentable/创建presentable.md)
     * [查看presentable详情](presentable/查看presentable详情.md)
     * [查看节点的presentable列表](presentable/查看节点的presentable列表.md)
-    * [批量获取presentable列表](presentable/根据合同ID批量获取presentable列表.md)
 * [附表](附表/README.md)
     * [retCode](附表/一级状态码.md)
     * [errCode](附表/二级状态码.md)

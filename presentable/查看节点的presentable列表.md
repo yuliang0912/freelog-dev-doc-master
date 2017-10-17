@@ -17,6 +17,7 @@ https://api.freelog.com/v1/presentables?nodeId={nodeId}
 | 参数 | 必选 | 类型及范围 | 说明 |
 | :--- | :--- | :--- | :--- |
 |nodeId|必选|int|节点ID|
+|contractIds|可选|string|合同ID,多个用","分割|
 
 
 ### 返回说明：
