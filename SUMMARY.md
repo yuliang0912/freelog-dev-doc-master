@@ -19,6 +19,8 @@
     * [创建节点](node/创建节点.md)
     * [查看节点详情](node/查看节点详情.md)
     * [查看节点列表](node/查看节点列表.md)
+    * [节点添加pageBuild](node/节点添加pageBuild.md)
+    * [节点查看自己的pageBuild](node/节点查看自己的pageBuild列表.md)
 * [presentable](presentable/README.md)
     * [创建presentable](presentable/创建presentable.md)
     * [查看presentable详情](presentable/查看presentable详情.md)
