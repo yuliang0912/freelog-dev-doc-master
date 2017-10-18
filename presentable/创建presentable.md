@@ -18,6 +18,7 @@ https://api.freelog.com/v1/presentables/
 |contractId|必选|string|合同ID
 |policyText|必选|string|策略描述语言(base64转译)
 |languageType|必选|string|策略语言类型(yaml和freelog_policy_lang)
+|userDefinedTags|可选|string|用户自定义的tags.多个tag用","分割
 
 ### body示例
 
@@ -44,6 +45,13 @@ https://api.freelog.com/v1/presentables/
 | serialNumber| string| 当前方案的序列号(版本ID)|
 | policy| object[]| 展示方案策略组 (示例数据仅做参考)|
 | createDate| date|创建日期|
+| tagInfo| object| tag信息|
+| **userDefined|string[]| 用户定义的tags |
+| **resourceInfo| object| presentable对应的资源基础信息 |
+| ****resourceId| string| 资源ID |
+| ****resourceName| string| 资源名称 |
+| ****resourceType| string| 资源类型 |
+| ****mimeType|string| 资源mimeType |
 
 
 ### 返回示例
@@ -65,96 +73,105 @@ https://api.freelog.com/v1/presentables/
         "updateDate": "2017-10-17T05:58:53.055Z",
         "policy": [
             {
-                "teminateState": "terminate",
-                "initialState": "initial",
-                "activatedStates": [
-                    "begining",
-                    "activate"
+                "segmentId": "7be32332fabb6381a85b893858e12560",
+                "users": [
+                    {
+                        "userType": "individuals",
+                        "users": [
+                            "userA",
+                            "userB"
+                        ]
+                    }
                 ],
                 "fsmDescription": [
                     {
-                        "nextState": "activatetwo",
+                        "currentState": "initial",
                         "event": {
-                            "eventId": "01664d216c274621aeb1fc4339d2055f",
+                            "type": "compoundEvents",
                             "params": [
                                 {
-                                    "eventId": "207fa63a44ca4aab8a5067f2ea7f2a90",
-                                    "eventName": "signing_licenseA_licenseB",
+                                    "type": "signing",
                                     "params": [
                                         "licenseA",
                                         "licenseB"
                                     ],
-                                    "type": "signing"
+                                    "eventName": "signing_licenseA_licenseB",
+                                    "eventId": "207fa63a44ca4aab8a5067f2ea7f2a90"
                                 },
                                 {
-                                    "eventId": "9e5755640d334949828e241b114fc5fc",
-                                    "eventName": "contractGuaranty_5000_1_event",
+                                    "type": "contractGuaranty",
                                     "params": [
                                         "5000",
                                         "1",
                                         "day"
                                     ],
-                                    "type": "contractGuaranty"
+                                    "eventName": "contractGuaranty_5000_1_event",
+                                    "eventId": "9e5755640d334949828e241b114fc5fc"
                                 }
                             ],
-                            "type": "compoundEvents"
+                            "eventId": "01664d216c274621aeb1fc4339d2055f"
                         },
-                        "currentState": "initial"
+                        "nextState": "activatetwo"
                     },
                     {
-                        "nextState": "activate",
+                        "currentState": "activatetwo",
                         "event": {
-                            "eventId": "9819096cd55c4bd79c6ce47d028894a7",
-                            "eventName": "arrivalDate_1_2012-12-12_event",
+                            "type": "arrivalDate",
                             "params": [
                                 1,
                                 "2012-12-12"
                             ],
-                            "type": "arrivalDate"
+                            "eventName": "arrivalDate_1_2012-12-12_event",
+                            "eventId": "9819096cd55c4bd79c6ce47d028894a7"
                         },
-                        "currentState": "activatetwo"
+                        "nextState": "activate"
                     },
                     {
-                        "nextState": "activatetwo",
+                        "currentState": "activate",
                         "event": {
-                            "eventId": "7e43cbd49f0849dfaef5ee7402ef7045",
-                            "eventName": "period_day_event",
+                            "type": "period",
                             "params": [
                                 "day"
                             ],
-                            "type": "period"
+                            "eventName": "period_day_event",
+                            "eventId": "7e43cbd49f0849dfaef5ee7402ef7045"
                         },
-                        "currentState": "activate"
+                        "nextState": "activatetwo"
                     },
                     {
-                        "nextState": "activate",
+                        "currentState": "activatetwo",
                         "event": {
-                            "eventId": "bf7f7634ed7d44528e29c65247294875",
-                            "eventName": "arrivalDate_0_10_day_event",
+                            "type": "arrivalDate",
                             "params": [
                                 0,
                                 10,
                                 "day"
                             ],
-                            "type": "arrivalDate"
+                            "eventName": "arrivalDate_0_10_day_event",
+                            "eventId": "bf7f7634ed7d44528e29c65247294875"
                         },
-                        "currentState": "activatetwo"
+                        "nextState": "activate"
                     }
                 ],
-                "users": [
-                    {
-                        "users": [
-                            "userA",
-                            "userB"
-                        ],
-                        "userType": "individuals"
-                    }
+                "activatedStates": [
+                    "begining",
+                    "activate"
                 ],
-                "segmentId": "7be32332fabb6381a85b893858e12560"
+                "initialState": "initial",
+                "teminateState": "terminate"
             }
         ],
         "policyText": "For userA , userB in the following states:     \n    in initial : \n      proceed to activatetwo on accepting license licenseA , licenseB and on contract_guaranty of 5000 refund after 1 day \n    in activatetwo : \n      proceed to activate on date 2012-12-12 \n    in activate : \n      proceed to activatetwo on the end of day \n    in activatetwo : \n      proceed to activate on 10 day after contract creation \n    I agree to authorize token in begining , activate",
         "languageType": "freelog_policy_lang",
+        "tagInfo": {
+            "userDefined": [],
+            "resourceInfo": {
+                "resourceId": "",
+                "resourceName": "",
+                "resourceType": "",
+                "mimeType": ""
+            }
+        },
         "status": 0
     }
 }

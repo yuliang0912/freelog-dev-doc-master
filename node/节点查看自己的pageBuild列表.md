@@ -22,6 +22,7 @@ https://api.freelog.com/v1/nodes/pagebuilds?nodeId={nodeId}
 | id | int| 主键ID |
 | nodeId | int| 节点ID |
 | presentableId | string | PB资源的展示方案ID|
+| presentableName | string | 展示方案名称 |
 | userId | int| 创建用户ID |
 | status | int| 状态 1:显示 2:隐藏 |
 | createDate| date|创建日期|
@@ -39,9 +40,10 @@ https://api.freelog.com/v1/nodes/pagebuilds?nodeId={nodeId}
             "id": 8,
             "nodeId": 1,
             "presentableId": "59e59c1dc08cd208ac0e0878",
+            "presentableName": "我的presnetable",
             "userId": 1,
             "createDate": "2017-10-17T08:10:43.000Z",
-            "updateDate": "2017-10-17T08:17:38.000Z",
+            "updateDate": "2017-10-18T06:01:33.000Z",
             "status": 1
         }
     ]
