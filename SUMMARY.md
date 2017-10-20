@@ -1,6 +1,11 @@
 # Summary
 
 * [简介](README.md)
+* [用户](user/README.md)
+    * [用户登陆](user/用户登陆.md)
+    * [用户登出](user/用户登出.md)
+    * [获取用户信息](user/获取用户信息.md)
+    * [注册用户](user/注册用户.md)
 * [资源](resource/README.md)
     * [创建资源](resource/创建资源.md)
     * [查看资源列表](resource/查看资源列表.md)
@@ -28,6 +33,7 @@
 * [附表](附表/README.md)
     * [retCode](附表/一级状态码.md)
     * [errCode](附表/二级状态码.md)
+    * [用户角色](附表/用户角色.md)
     * [资源类型](附表/资源类型.md)
     * [合同类型](附表/合同类型.md)
     * [资源meta说明](附表/资源meta说明.md)
