@@ -8,6 +8,7 @@
     * [注册用户](user/注册用户.md)
 * [资源](resource/README.md)
     * [创建资源](resource/创建资源.md)
+    * [更新资源信息](resource/更新资源信息.md)
     * [查看资源列表](resource/查看资源列表.md)
     * [查看单个资源详情](resource/查看单个资源详情.md)
     * [查看平台资源库列表](resource/查看平台资源库列表.md)
