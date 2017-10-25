@@ -11,7 +11,6 @@ https://api.freelog.com/v1/presentables?nodeId={nodeId}
 
 ### url传入参数说明：
 
-
 | 参数 | 必选 | 类型及范围 | 说明 |
 | :--- | :--- | :--- | :--- |
 |nodeId|必选|int|节点ID|

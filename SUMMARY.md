@@ -17,6 +17,7 @@
     * [更新策略](policy/更新策略.md)
     * [删除策略](policy/删除策略.md)
     * [查看策略详情](policy/查看策略详情.md)
+    * [查看策略列表](policy/查看策略列表.md)
 * [合同](contract/README.md)
     * [创建合同](contract/创建合同.md)
     * [查看合同详情](contract/查看合同详情.md)
