@@ -6,6 +6,7 @@
     * [用户登出](user/用户登出.md)
     * [获取用户信息](user/获取用户信息.md)
     * [注册用户](user/注册用户.md)
+    * [重置密码](user/重置密码.md)
 * [资源](resource/README.md)
     * [创建资源](resource/创建资源.md)
     * [更新资源信息](resource/更新资源信息.md)
