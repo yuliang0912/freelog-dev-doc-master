@@ -33,6 +33,7 @@
     * [节点查看自己的pageBuild](node/节点查看自己的pageBuild列表.md)
 * [presentable](presentable/README.md)
     * [创建presentable](presentable/创建presentable.md)
+    * [创建pb资源的presentable](presentable/创建pb资源的presentable.md)
     * [查看presentable详情](presentable/查看presentable详情.md)
     * [查看节点的presentable列表](presentable/查看节点的presentable列表.md)
 * [附表](附表/README.md)
