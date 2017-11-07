@@ -12,7 +12,6 @@ https://api.freelog.com/v1/presentables/createPageBuildPresentable
 
 | 参数 | 必选 | 类型及范围 | 说明 |
 | :--- | :--- | :--- | :--- |
-
 |nodeId|必选|int|节点ID
 |languageType|必选|string|策略语言类型(yaml和freelog_policy_lang)
 |presentables|必选|object[]|pb以及widget的presentable创建信息
