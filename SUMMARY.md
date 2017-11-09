@@ -37,6 +37,7 @@
     * [创建pb资源的presentable](presentable/创建pb资源的presentable.md)
     * [查看presentable详情](presentable/查看presentable详情.md)
     * [查看节点的presentable列表](presentable/查看节点的presentable列表.md)
+    * [请求获取presentable资源](presentable/请求获取presentable资源.md)
 * [附表](附表/README.md)
     * [retCode](附表/一级状态码.md)
     * [errCode](附表/二级状态码.md)
