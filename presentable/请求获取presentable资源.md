@@ -70,7 +70,6 @@ https://api.freelog.com/v1/nodes/{nodeId}/presentables/{presentableId}(.{extName
             "fileSize": 755,
             "mimeType": "text/html"
         },
-        "userId": 10024,
         "status": 2,
         "createDate": "2017-11-06T16:05:55.000Z"
     }

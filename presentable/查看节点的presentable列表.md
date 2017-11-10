@@ -15,6 +15,8 @@ https://api.freelog.com/v1/presentables?nodeId={nodeId}
 | :--- | :--- | :--- | :--- |
 |nodeId|必选|int|节点ID|
 |contractIds|可选|string|合同ID,多个用","分割|
+|resourceType|可选|string|资源类型|
+|tags|可选|string|用户创建presentable时设置的自定义标签,多个用","分割|
 
 
 ### 返回说明：
