@@ -17,11 +17,11 @@ https://api.freelog.com/v1/nodes/{nodeId}/presentables/{presentableId}(.{extName
 |presentableId|必选|string|展示策略ID
 |extName|可选|string|可选值为[data、js、css、html]
 
-### extName：
+### extName返回值说明：
 | extName值 | extName说明
 | :--- | :--- | :--- |
 | [empty] | 系统直接返回当前presentable对应的resource基础信息|
-| data  | 系统直接返回当前presnetable对应的resource文件|
+| data  | 系统直接返回当前presnetable对应的resource文件,即创建资源时上传的文件|
 | js  | 系统直接返回当前presnetable对应的resource文件的js部分|
 | css  | 系统直接返回当前presnetable对应的resource文件的css部分|
 | html  | 系统直接返回当前presnetable对应的resource文件的html部分|

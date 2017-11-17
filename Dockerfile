@@ -1,6 +1,6 @@
 FROM daocloud.io/node:8.5-alpine
 
-MAINTAINER yuliang<yu.liang@freelog.com>
+MAINTAINER yuliang <yu.liang@freelog.com>
 
 ARG VERSION=3.2.0
 
