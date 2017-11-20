@@ -26,6 +26,7 @@
     * [根据多条件查询合同列表](contract/根据多条件查询合同列表.md)
     * [变更合同状态](contract/变更合同状态.md)
     * [创建pb资源的合同](contract/创建pb资源的合同.md)
+    * [给合同签协议](contract/给合同签协议.md)
 * [节点](node/README.md)
     * [创建节点](node/创建节点.md)
     * [查看节点详情](node/查看节点详情.md)
