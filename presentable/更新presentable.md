@@ -8,6 +8,13 @@
 https://api.freelog.com/v1/presentables/{presentableId}
 ```
 
+### url传入参数说明：
+
+| 参数 | 必选 | 类型及范围 | 说明 |
+| :--- | :--- | :--- | :--- |
+|presentableId|必选|string|presentableId
+
+
 ### body传入参数说明：
 
 | 参数 | 必选 | 类型及范围 | 说明 |
