@@ -38,6 +38,7 @@
 * [presentable](presentable/README.md)
     * [创建presentable](presentable/创建presentable.md)
     * [创建pb资源的presentable](presentable/创建pb资源的presentable.md)
+    * [关联pb资源的插件合同](presentable/关联pb资源的插件合同.md)
     * [更新presentable](presentable/更新presentable.md)
     * [查看presentable详情](presentable/查看presentable详情.md)
     * [查看节点的presentable列表](presentable/查看节点的presentable列表.md)
