@@ -43,6 +43,8 @@
     * [查看presentable详情](presentable/查看presentable详情.md)
     * [查看节点的presentable列表](presentable/查看节点的presentable列表.md)
     * [请求获取presentable资源](presentable/请求获取presentable资源.md)
+    * [查看pb资源的插件签约情况](presentable/查看pb资源的插件签约情况.md)
+    * [查看pb资源的插件签约统计](presentable/查看pb资源的插件签约统计.md)
 * [支付](pay/README.md)
     * [创建以太坊eth账户](pay/创建以太坊eth账户.md)
     * [下载eth账户的keyStore](pay/下载eth账户的keyStore文件.md)

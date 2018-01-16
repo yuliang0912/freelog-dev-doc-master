@@ -14,8 +14,8 @@ https://api.freelog.com/v1/presentables/pageBuildAssociateWidget
 | 参数 | 必选 | 类型及范围 | 说明 |
 | :--- | :--- | :--- | :--- |
 |pbPresentableId|必选|string|需要关联的page-build资源的presentable|
-|increaseContractIds|必选|string[]|需要关联的widget合同ID|
-|removeContractIds|必选|string[]|需要取消关联的widget合同ID|
+|increaseContractIds|必选|string[]|需要关联的widget合同ID,如果切换contractId,则需要填写新的合同ID|
+|removeContractIds|必选|string[]|需要取消关联的widget合同ID,如果切换contractId,则需要填写旧的合同ID|
 
 ### body示例
 
@@ -34,23 +34,29 @@ https://api.freelog.com/v1/presentables/pageBuildAssociateWidget
 | presentableId | string | 展示方案ID|
 | resourceId | string | presentable对应的资源ID |
 | contractId | string | presentable对应的合同ID |
-| relevanceContractIds | string[] | presentable关联的插件合同ID |
+| relevanceContractIds | object[] | presentable关联的插件合同ID |
+| **contractId | string | 关联插件的合同ID |
+| **resourceId | string | 关联插件的资源ID |
 
 ### 返回示例
 
 ```js
 {
-    "ret": 0,
-    "errcode": 0,
-    "msg": "success",
-    "data": {
-        "presentableId": "5a43448416acaa002a2730ac",
-        "resourceId": "f12c2952dae1372bd13bce6b55a0cac190c4c4e7",
-        "contractId": "5a43446ffba1ef00213053ef",
-        "relevanceContractIds": ["5a531f766f5da10020904589"],
-        "status": 0,
-        "updateDate": "2018-01-15T06:52:13.325",
-        "createDate": "2018-01-15T06:51:51.194"
-    }
+	"ret": 0,
+	"errcode": 0,
+	"msg": "success",
+	"data": {
+		"updateDate": "2018-01-15T09:47:23.832Z",
+		"createDate": "2018-01-15T09:47:23.832Z",
+		"presentableId": "5a5439049bc4e800219bbf24",
+		"resourceId": "b2ceb75c53f6dccf14868b1c448f71c1298fca68",
+		"contractId": "5a5438ef6f5da10020904590",
+		"_id": "5a5c78abfe83c1001fcb88ef",
+		"status": 0,
+		"relevanceContractIds": [{
+			"contractId": "dff5a487df8cfb3e99f57b1c75d8a788ec70780a",
+			"resourceId": "dff5a487df8cfb3e99f57b1c75d8a788ec70780a"
+		}]
+	}
 }
 ```
