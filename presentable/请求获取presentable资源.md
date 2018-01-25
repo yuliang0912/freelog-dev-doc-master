@@ -3,19 +3,24 @@
 
 ### 调用方式: GET
 
+
+
 ### 接口地址:
+~~https://api.freelog.com/v1/nodes/{nodeId}/presentables/{presentableId}(.{extName})~~
 
 ```
-https://api.freelog.com/v1/nodes/{nodeId}/presentables/{presentableId}(.{extName})
+http://api.freelog.com/v1/presentables/resource/{presentableId}[.{extName}]?nodeId={nodeId}&userContractId={userContractId}
+
 ```
 
 ### url传入参数说明：
 
 | 参数 | 必选 | 类型及范围 | 说明 |
 | :--- | :--- | :--- | :--- |
-|nodeId|必选|int|节点ID
-|presentableId|必选|string|展示策略ID
-|extName|可选|string|可选值为[data、js、css、html]
+|nodeId|必选|int|节点ID|
+|presentableId|必选|string|展示策略ID|
+|extName|可选|string|可选值为[data、js、css、html]|
+|userContractId|可选|string|如果用户有多个合同,此处为用户需要执行的合同ID.默认可以不传,系统会自动查找|
 
 ### extName返回值说明：
 | extName值 | extName说明
