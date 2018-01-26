@@ -51,8 +51,8 @@ http://api.freelog.com/v1/presentables/resource/{presentableId}[.{extName}]?node
 | 返回值字段 | 字段类型 | 字段说明 |
 | :--- | :--- | :--- |
 | freelog-resource-type | string | 资源类型|
-| freelog-meta | json-string | 资源meta信息|
-| freelog-system-meta | json-string | 资源的系统meta |
+| freelog-meta | json-string-base64 | 资源meta信息,经过base64编码的json字符串|
+| freelog-system-meta | json-string-base64 | 资源的系统meta,经过base64编码的json字符串 |
 | freelog-contract-id | string | presentable - resource的合同ID |
 
 
