@@ -47,6 +47,7 @@
     * [请求获取presentable资源](presentable/请求获取presentable资源.md)
     * [查看pb资源的插件签约情况](presentable/查看pb资源的插件签约情况.md)
     * [查看pb资源的插件签约统计](presentable/查看pb资源的插件签约统计.md)
+    * [获取策略段身份认证结果](presentable/获取策略段身份认证结果.md)
 * [支付](pay/README.md)
     * [创建以太坊eth账户](pay/创建以太坊eth账户.md)
     * [下载eth账户的keyStore](pay/下载eth账户的keyStore文件.md)
