@@ -83,6 +83,7 @@
     * [更新授权点](auth-scheme/更新授权点.md)
     * [查看授权点详情](auth-scheme/查看授权点详情.md)
     * [查看授权点列表](auth-scheme/查看授权点列表.md)
+    * [管理授权点资源依赖合约](auth-scheme/管理授权点资源依赖合约.md)
 * [附表](附表/README.md)
     * [retCode](附表/一级状态码.md)
     * [errCode](附表/二级状态码.md)
