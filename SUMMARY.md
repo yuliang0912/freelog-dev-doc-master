@@ -16,6 +16,7 @@
     * [查看单个资源详情](resource/查看单个资源详情.md)
     * [查看平台资源库列表](resource/查看平台资源库列表.md)
     * [批量查询资源列表](resource/批量查询资源列表.md)
+    * [查询资源的依赖树](resource/查询资源的依赖树.md)
 * [资源授权策略](policy/README.md)
     * [创建策略](policy/创建策略.md)
     * [更新策略](policy/更新策略.md)
