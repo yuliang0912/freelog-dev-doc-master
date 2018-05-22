@@ -18,6 +18,7 @@
     * [批量查询资源列表](resource/批量查询资源列表.md)
     * [查询资源的依赖树](resource/查询资源的依赖树.md)
     * [收藏资源](resource/收藏资源.md)
+    * [查看资源收藏详情](resource/查看资源收藏详情.md)
     * [删除收藏的资源](resource/删除收藏的资源.md)
     * [查看收藏的资源列表](resource/查看收藏的资源列表.md)
 * [资源授权策略](policy/README.md)
