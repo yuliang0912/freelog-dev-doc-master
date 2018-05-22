@@ -21,6 +21,7 @@
     * [查看资源收藏详情](resource/查看资源收藏详情.md)
     * [删除收藏的资源](resource/删除收藏的资源.md)
     * [查看收藏的资源列表](resource/查看收藏的资源列表.md)
+    * [上传资源预览图](resource/上传资源预览图.md)
 * [资源授权策略](policy/README.md)
     * [创建策略](policy/创建策略.md)
     * [更新策略](policy/更新策略.md)
