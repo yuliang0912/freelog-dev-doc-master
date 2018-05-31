@@ -6,7 +6,6 @@
 
 
 ### 接口地址:
-~~https://api.freelog.com/v1/nodes/{nodeId}/presentables/{presentableId}(.{extName})~~
 
 ```
 http://api.freelog.com/v1/presentables/resource/{presentableId}[.{extName}]?nodeId={nodeId}&userContractId={userContractId}

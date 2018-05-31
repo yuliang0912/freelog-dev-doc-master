@@ -20,21 +20,19 @@ https://api.freelog.com/v1/presentables/{presentableId}
 | 返回值字段 | 字段类型 | 字段说明 |
 | :--- | :--- | :--- |
 | presentableId | string | 展示方案ID|
-| name | string | 展示方案名称 |
+| presentableName | string | 展示方案名称 |
 | resourceId | string | 方案对应的资源ID |
-| contractId | string | 方案对应的资源合同ID |
 | userId | int| 创建方案的用户ID |
 | nodeId | int| 节点ID |
-| serialNumber| string| 当前方案的序列号(版本ID)|
-| createDate| date|创建日期|
+| nodeName | string| 节点名称 |
 | policy| object[]| 展示方案策略组 (示例数据仅做参考)|
-| tagInfo| object| tag信息|
-| **userDefined|string[]| 用户定义的tags |
-| **resourceInfo| object| presentable对应的资源基础信息 |
-| ****resourceId| string| 资源ID |
-| ****resourceName| string| 资源名称 |
-| ****resourceType| string| 资源类型 |
-| ****mimeType|string| 资源mimeType |
+| createDate| date|创建日期|
+| userDefinedTags| string[]| 用户定义的tags |
+| resourceInfo| object| presentable对应的资源基础信息 |
+| **resourceName| string| 资源名称 |
+| **resourceType| string| 资源类型 |
+| contracts | object[]| 当前presentable关联的执行合同 |
+
 
 
 ### 返回示例
@@ -45,115 +43,55 @@ https://api.freelog.com/v1/presentables/{presentableId}
     "errcode": 0,
     "msg": "success",
     "data": {
-        "presentableId": "59e59c1dc08cd208ac0e0878",
-        "name": "我的方案1",
-        "resourceId": "59ddb58ad62d0d269803eed5",
-        "contractId": "59e45c3b86651350a8733c82",
-        "userId": 1,
-        "nodeId": 1,
-        "serialNumber": "59e59c1dc08cd208ac0e0877",
-        "createDate": "2017-10-17T05:58:53.055Z",
-        "updateDate": "2017-10-17T05:58:53.055Z",
+        "presentableId": "5b0d1ca255d4055cf84bdb73",
+        "presentableName": "presentableName",
+        "resourceId": "2900eac4e4c8d96649901ac20a245b7bfa68ba8e",
+        "userId": 10026,
+        "nodeId": 10015,
+        "nodeName": "demo",
+        "createDate": "2018-05-29T09:25:54.043Z",
+        "updateDate": "2018-05-30T08:10:30.236Z",
+        "contracts": [
+            {
+                "resourceId": "2900eac4e4c8d96649901ac20a245b7bfa68ba8e",
+                "authSchemeId": "5afb9e67f313cc4d88a3f9a1",
+                "policySegmentId": "397c06bd49cb3712437890c9cdf8b222",
+                "contractId": "5b0e4d772868266bb8055c1f"
+            }
+        ],
         "policy": [
             {
-                "segmentId": "7be32332fabb6381a85b893858e12560",
+                "segmentId": "a68379dd361e74a89a37fce7a8b8d989",
+                "policyName": "新的方案1",
+                "segmentText": "for public: in <init> : terminate",
                 "users": [
                     {
-                        "userType": "individuals",
+                        "userType": "group",
                         "users": [
-                            "userA",
-                            "userB"
+                            "public"
                         ]
                     }
                 ],
                 "fsmDescription": [
                     {
-                        "currentState": "initial",
-                        "event": {
-                            "type": "compoundEvents",
-                            "params": [
-                                {
-                                    "type": "signing",
-                                    "params": [
-                                        "licenseA",
-                                        "licenseB"
-                                    ],
-                                    "eventName": "signing_licenseA_licenseB",
-                                    "eventId": "207fa63a44ca4aab8a5067f2ea7f2a90"
-                                },
-                                {
-                                    "type": "contractGuaranty",
-                                    "params": [
-                                        "5000",
-                                        "1",
-                                        "day"
-                                    ],
-                                    "eventName": "contractGuaranty_5000_1_event",
-                                    "eventId": "9e5755640d334949828e241b114fc5fc"
-                                }
-                            ],
-                            "eventId": "01664d216c274621aeb1fc4339d2055f"
-                        },
-                        "nextState": "activatetwo"
-                    },
-                    {
-                        "currentState": "activatetwo",
-                        "event": {
-                            "type": "arrivalDate",
-                            "params": [
-                                1,
-                                "2012-12-12"
-                            ],
-                            "eventName": "arrivalDate_1_2012-12-12_event",
-                            "eventId": "9819096cd55c4bd79c6ce47d028894a7"
-                        },
-                        "nextState": "activate"
-                    },
-                    {
-                        "currentState": "activate",
-                        "event": {
-                            "type": "period",
-                            "params": [
-                                "day"
-                            ],
-                            "eventName": "period_day_event",
-                            "eventId": "7e43cbd49f0849dfaef5ee7402ef7045"
-                        },
-                        "nextState": "activatetwo"
-                    },
-                    {
-                        "currentState": "activatetwo",
-                        "event": {
-                            "type": "arrivalDate",
-                            "params": [
-                                0,
-                                10,
-                                "day"
-                            ],
-                            "eventName": "arrivalDate_0_10_day_event",
-                            "eventId": "bf7f7634ed7d44528e29c65247294875"
-                        },
-                        "nextState": "activate"
+                        "currentState": "<init>"
                     }
                 ],
                 "activatedStates": [
-                    "begining",
-                    "activate"
+                    "<init>"
                 ],
-                "initialState": "initial",
-                "teminateState": "terminate"
+                "initialState": "<init>",
+                "terminateState": "terminate",
+                "status": 0
             }
         ],
-        "policyText": "For userA , userB in the following states:     \n    in initial : \n      proceed to activatetwo on accepting license licenseA , licenseB and on contract_guaranty of 5000 refund after 1 day \n    in activatetwo : \n      proceed to activate on date 2012-12-12 \n    in activate : \n      proceed to activatetwo on the end of day \n    in activatetwo : \n      proceed to activate on 10 day after contract creation \n    I agree to authorize token in begining , activate",
-        "languageType": "freelog_policy_lang",
-        "tagInfo": {
-            "userDefined": [],
-            "resourceInfo": {
-                "resourceId": "",
-                "resourceName": "",
-                "resourceType": "",
-                "mimeType": ""
-            }
+        "userDefinedTags": [
+            "tag1",
+            "tag2"
+        ],
+        "resourceInfo": {
+            "resourceName": "我的资源",
+            "resourceType": "license"
         },
         "status": 0
     }

@@ -14,7 +14,6 @@ https://api.freelog.com/v1/presentables?nodeId={nodeId}
 | 参数 | 必选 | 类型及范围 | 说明 |
 | :--- | :--- | :--- | :--- |
 |nodeId|必选|int|节点ID|
-|contractIds|可选|string|合同ID,多个用","分割|
 |resourceType|可选|string|资源类型|
 |tags|可选|string|用户创建presentable时设置的自定义标签,多个用","分割|
 
@@ -24,47 +23,64 @@ https://api.freelog.com/v1/presentables?nodeId={nodeId}
 | 返回值字段 | 字段类型 | 字段说明 |
 | :--- | :--- | :--- |
 | presentableId | string | 展示方案ID|
-| name | string | 展示方案名称 |
+| presentableName | string | 展示方案名称 |
 | resourceId | string | 方案对应的资源ID |
-| contractId | string | 方案对应的资源合同ID |
 | userId | int| 创建方案的用户ID |
-| serialNumber| string| 当前方案的序列号(版本ID)|
-| tagInfo| object| tag信息|
-| **userDefined|string[]| 用户定义的tags |
-| **resourceInfo| object| presentable对应的资源基础信息 |
-| ****resourceId| string| 资源ID |
-| ****resourceName| string| 资源名称 |
-| ****resourceType| string| 资源类型 |
-| ****mimeType|string| 资源mimeType |
+| nodeId | int| 节点ID |
+| nodeName | string| 节点名称 |
+| policy| object[]| 展示方案策略组 (示例数据仅做参考)|
+| createDate| date|创建日期|
+| userDefinedTags| string[]| 用户定义的tags |
+| resourceInfo| object| presentable对应的资源基础信息 |
+| **resourceName| string| 资源名称 |
+| **resourceType| string| 资源类型 |
+| contracts | object[]| 当前presentable关联的执行合同 |
+
 
 ### 示例
 
 ```js
 {
-    "ret": 0,
-    "errcode": 0,
-    "msg": "success",
-    "data": [
-        {
-            "presentableId": "59a67443e700dd14d8e81786",
-            "name": "我的方案1",
-            "resourceId": "59a3b81b0f1f332e84eba2ba",
-            "contractId": "59a3c612567e5c22a41d8f5c",
-            "userId": 1,
-            "nodeId": 1,
-            "serialNumber": "59a67443e700dd14d8e81785",
-            "createDate": "2017-08-30T08:16:03.963Z",
-            "tagInfo": {
-                "userDefined": [],
-                "resourceInfo": {
-                    "resourceId": "",
-                    "resourceName": "",
-                    "resourceType": "",
-                    "mimeType": ""
-                }
-            },
-            "status": 0
-        }
-    ]
+	"ret": 0,
+	"errcode": 0,
+	"msg": "success",
+	"data": [{
+		"presentableId": "5b0d1ca255d4055cf84bdb73",
+		"presentableName": "presentableName",
+		"resourceId": "2900eac4e4c8d96649901ac20a245b7bfa68ba8e",
+		"userId": 10026,
+		"nodeId": 10015,
+		"nodeName": "demo",
+		"createDate": "2018-05-29T09:25:54.043Z",
+		"updateDate": "2018-05-30T08:10:30.236Z",
+		"contracts": [{
+			"resourceId": "2900eac4e4c8d96649901ac20a245b7bfa68ba8e",
+			"authSchemeId": "5afb9e67f313cc4d88a3f9a1",
+			"policySegmentId": "397c06bd49cb3712437890c9cdf8b222",
+			"contractId": "5b0e4d772868266bb8055c1f"
+		}],
+		"policy": [{
+			"segmentId": "a68379dd361e74a89a37fce7a8b8d989",
+			"policyName": "新的方案1",
+			"segmentText": "for public: in <init> : terminate",
+			"users": [{
+				"userType": "group",
+				"users": ["public"]
+			}],
+			"fsmDescription": [{
+				"currentState": "<init>"
+			}],
+			"activatedStates": ["<init>"],
+			"initialState": "<init>",
+			"terminateState": "terminate",
+			"status": 0
+		}],
+		"userDefinedTags": ["tag1", "tag2"],
+		"resourceInfo": {
+			"resourceName": "我的资源",
+			"resourceType": "license"
+		},
+		"status": 0
+	}]
 }
 ```

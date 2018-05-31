@@ -15,21 +15,47 @@ https://api.freelog.com/v1/presentables/{presentableId}
 |presentableId|必选|string|presentableId
 
 
-### body传入参数说明：
+### body传入参数说明： (contracts字段中,如果选择之前的合约,则只需填写resourceId和contractId即可.如果是新选择的策略,则填resourceId,policySegmentId,authSchemeId)
 
 | 参数 | 必选 | 类型及范围 | 说明 |
 | :--- | :--- | :--- | :--- |
-|name|可选|string|presentable名称
-|policyText|可选|string|策略描述语言(base64转译)
-|userDefinedTags|可选|string|用户自定义的tags.多个tag用","分割
+|presentableName|可选|string|presentable名称
+|userDefinedTags|可选|string[]| 用户自定义的tags |
+|policies|可选|object| 授权策略段 |
+|isOnline|可选|int|是否上线 0:否 1:是 合同,策略与presentable完备才可以上线|
+|**addPolicySegments|可选|object[]| 新增的授权策略段 |
+|****policyName|必选|string| 策略名称 |
+|****policyText|必选|string| 策略文本,base64编码 |
+|**removePolicySegments|可选|string[]| 需要删除的授权策略段,此处传segmentId |
+|**updatePolicySegments|可选|object[]| 需要更新的授权策略段 |
+|****policySegmentId|必选|string| 策略段落ID |
+|****policyName|必选|string| 策略名称 |
+|****status|必选|int| 策略状态 (0:不显示 1:显示) |
+|contracts|可选|object[]| 当前presentable与资源以及上抛资源的执行合约信息,部分变更需要回传全部 |
+|****resouceId|必选|string| 资源ID |
+|****policySegmentId|可选|string| 策略段落ID |
+|****authSchemeId|可选|string| 授权点ID |
+|****contractId|可选|string|合同ID|
+
 
 ### body示例
 
 ```js
 {
-    "name": "我的方案1",
-    "policyText": "Rm9yIHVzZXJBICwgdXNlckIgaW4gdGhlIGZvbGxvd2luZyBzdGF0ZXM6ICAgICAKICAgIGluIGluaXRpYWwgOiAKICAgICAgcHJvY2VlZCB0byBhY3RpdmF0ZXR3byBvbiBhY2NlcHRpbmcgbGljZW5zZSBsaWNlbnNlQSAsIGxpY2Vuc2VCIGFuZCBvbiBjb250cmFjdF9ndWFyYW50eSBvZiA1MDAwIHJlZnVuZCBhZnRlciAxIGRheSAKICAgIGluIGFjdGl2YXRldHdvIDogCiAgICAgIHByb2NlZWQgdG8gYWN0aXZhdGUgb24gZGF0ZSAyMDEyLTEyLTEyIAogICAgaW4gYWN0aXZhdGUgOiAKICAgICAgcHJvY2VlZCB0byBhY3RpdmF0ZXR3byBvbiB0aGUgZW5kIG9mIGRheSAKICAgIGluIGFjdGl2YXRldHdvIDogCiAgICAgIHByb2NlZWQgdG8gYWN0aXZhdGUgb24gMTAgZGF5IGFmdGVyIGNvbnRyYWN0IGNyZWF0aW9uIAogICAgSSBhZ3JlZSB0byBhdXRob3JpemUgdG9rZW4gaW4gYmVnaW5pbmcgLCBhY3RpdmF0ZQ==",
-    "userDefinedTags": "tag1,tag2"
+	"presentableName": "presentableName",
+	"userDefinedTags": ["tag1","tag2"],
+  	"policies":{
+  	    "updatePolicySegments": [{
+          	"policySegmentId":"a68379dd361e74a89a37fce7a8b8d989",
+			"policyName": "新的方案1",
+            "status":0
+		}]
+  	},
+  	"contracts":[{
+      "resourceId":"2900eac4e4c8d96649901ac20a245b7bfa68ba8e",
+      "authSchemeId":"5afb9e67f313cc4d88a3f9a1",
+      "policySegmentId":"397c06bd49cb3712437890c9cdf8b222"
+  	}]
 }
 ```
 
@@ -38,21 +64,18 @@ https://api.freelog.com/v1/presentables/{presentableId}
 | 返回值字段 | 字段类型 | 字段说明 |
 | :--- | :--- | :--- |
 | presentableId | string | 展示方案ID|
-| name | string | 展示方案名称 |
+| presentableName | string | 展示方案名称 |
 | resourceId | string | 方案对应的资源ID |
-| contractId | string | 方案对应的资源合同ID |
 | userId | int| 创建方案的用户ID |
 | nodeId | int| 节点ID |
-| serialNumber| string| 当前方案的序列号(版本ID)|
+| nodeName | string| 节点名称 |
 | policy| object[]| 展示方案策略组 (示例数据仅做参考)|
 | createDate| date|创建日期|
-| tagInfo| object| tag信息|
-| **userDefined|string[]| 用户定义的tags |
-| **resourceInfo| object| presentable对应的资源基础信息 |
-| ****resourceId| string| 资源ID |
-| ****resourceName| string| 资源名称 |
-| ****resourceType| string| 资源类型 |
-| ****mimeType|string| 资源mimeType |
+| userDefinedTags| string[]| 用户定义的tags |
+| resourceInfo| object| presentable对应的资源基础信息 |
+| **resourceName| string| 资源名称 |
+| **resourceType| string| 资源类型 |
+| contracts | object[]| 当前presentable关联的执行合同 |
 
 
 ### 返回示例
@@ -63,115 +86,55 @@ https://api.freelog.com/v1/presentables/{presentableId}
     "errcode": 0,
     "msg": "success",
     "data": {
-        "presentableId": "59e59c1dc08cd208ac0e0878",
-        "name": "我的方案1",
-        "resourceId": "59ddb58ad62d0d269803eed5",
-        "contractId": "59e45c3b86651350a8733c82",
-        "userId": 1,
-        "nodeId": 1,
-        "serialNumber": "59e59c1dc08cd208ac0e0877",
-        "createDate": "2017-10-17T05:58:53.055Z",
-        "updateDate": "2017-10-17T05:58:53.055Z",
+        "presentableId": "5b0d1ca255d4055cf84bdb73",
+        "presentableName": "presentableName",
+        "resourceId": "2900eac4e4c8d96649901ac20a245b7bfa68ba8e",
+        "userId": 10026,
+        "nodeId": 10015,
+        "nodeName": "demo",
+        "createDate": "2018-05-29T09:25:54.043Z",
+        "updateDate": "2018-05-30T08:10:30.236Z",
+        "contracts": [
+            {
+                "resourceId": "2900eac4e4c8d96649901ac20a245b7bfa68ba8e",
+                "authSchemeId": "5afb9e67f313cc4d88a3f9a1",
+                "policySegmentId": "397c06bd49cb3712437890c9cdf8b222",
+                "contractId": "5b0e4d772868266bb8055c1f"
+            }
+        ],
         "policy": [
             {
-                "segmentId": "7be32332fabb6381a85b893858e12560",
+                "segmentId": "a68379dd361e74a89a37fce7a8b8d989",
+                "policyName": "新的方案1",
+                "segmentText": "for public: in <init> : terminate",
                 "users": [
                     {
-                        "userType": "individuals",
+                        "userType": "group",
                         "users": [
-                            "userA",
-                            "userB"
+                            "public"
                         ]
                     }
                 ],
                 "fsmDescription": [
                     {
-                        "currentState": "initial",
-                        "event": {
-                            "type": "compoundEvents",
-                            "params": [
-                                {
-                                    "type": "signing",
-                                    "params": [
-                                        "licenseA",
-                                        "licenseB"
-                                    ],
-                                    "eventName": "signing_licenseA_licenseB",
-                                    "eventId": "207fa63a44ca4aab8a5067f2ea7f2a90"
-                                },
-                                {
-                                    "type": "contractGuaranty",
-                                    "params": [
-                                        "5000",
-                                        "1",
-                                        "day"
-                                    ],
-                                    "eventName": "contractGuaranty_5000_1_event",
-                                    "eventId": "9e5755640d334949828e241b114fc5fc"
-                                }
-                            ],
-                            "eventId": "01664d216c274621aeb1fc4339d2055f"
-                        },
-                        "nextState": "activatetwo"
-                    },
-                    {
-                        "currentState": "activatetwo",
-                        "event": {
-                            "type": "arrivalDate",
-                            "params": [
-                                1,
-                                "2012-12-12"
-                            ],
-                            "eventName": "arrivalDate_1_2012-12-12_event",
-                            "eventId": "9819096cd55c4bd79c6ce47d028894a7"
-                        },
-                        "nextState": "activate"
-                    },
-                    {
-                        "currentState": "activate",
-                        "event": {
-                            "type": "period",
-                            "params": [
-                                "day"
-                            ],
-                            "eventName": "period_day_event",
-                            "eventId": "7e43cbd49f0849dfaef5ee7402ef7045"
-                        },
-                        "nextState": "activatetwo"
-                    },
-                    {
-                        "currentState": "activatetwo",
-                        "event": {
-                            "type": "arrivalDate",
-                            "params": [
-                                0,
-                                10,
-                                "day"
-                            ],
-                            "eventName": "arrivalDate_0_10_day_event",
-                            "eventId": "bf7f7634ed7d44528e29c65247294875"
-                        },
-                        "nextState": "activate"
+                        "currentState": "<init>"
                     }
                 ],
                 "activatedStates": [
-                    "begining",
-                    "activate"
+                    "<init>"
                 ],
-                "initialState": "initial",
-                "teminateState": "terminate"
+                "initialState": "<init>",
+                "terminateState": "terminate",
+                "status": 0
             }
         ],
-        "policyText": "For userA , userB in the following states:     \n    in initial : \n      proceed to activatetwo on accepting license licenseA , licenseB and on contract_guaranty of 5000 refund after 1 day \n    in activatetwo : \n      proceed to activate on date 2012-12-12 \n    in activate : \n      proceed to activatetwo on the end of day \n    in activatetwo : \n      proceed to activate on 10 day after contract creation \n    I agree to authorize token in begining , activate",
-        "languageType": "freelog_policy_lang",
-        "tagInfo": {
-            "userDefined": [],
-            "resourceInfo": {
-                "resourceId": "",
-                "resourceName": "",
-                "resourceType": "",
-                "mimeType": ""
-            }
+        "userDefinedTags": [
+            "tag1",
+            "tag2"
+        ],
+        "resourceInfo": {
+            "resourceName": "我的资源",
+            "resourceType": "license"
         },
         "status": 0
     }
