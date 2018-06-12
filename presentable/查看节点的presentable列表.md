@@ -35,7 +35,8 @@ https://api.freelog.com/v1/presentables?nodeId={nodeId}
 | **resourceName| string| 资源名称 |
 | **resourceType| string| 资源类型 |
 | contracts | object[]| 当前presentable关联的执行合同 |
-
+| isOnline | int| 是否上线 0:否 1:是 |
+| status | int| 状态 1:合同已完备  2:存在可用策略 总状态通过|运算 |
 
 ### 示例
 
