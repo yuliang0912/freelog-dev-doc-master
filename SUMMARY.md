@@ -35,6 +35,7 @@
     * [创建节点](node/创建节点.md)
     * [查看节点详情](node/查看节点详情.md)
     * [查看节点列表](node/查看节点列表.md)
+    * [更新节点信息](node/更新节点信息.md)
     * [节点修改pageBuild状态](node/节点修改pageBuild状态.md)
     * [节点查看自己的pageBuild](node/节点查看自己的pageBuild列表.md)
     * [创建自定义数据存储](node/创建自定义数据存储.md)
