@@ -8,7 +8,7 @@
 ### 接口地址:
 
 ```
-http://api.freelog.com/v1/presentables/resource/{presentableId}[.{extName}]?nodeId={nodeId}&userContractId={userContractId}
+http://api.freelog.com/v1/auths/presentable/{presentableId}[.{extName}]?nodeId={nodeId}&userContractId={userContractId}&resourceId={resourceId}
 
 ```
 
@@ -18,7 +18,8 @@ http://api.freelog.com/v1/presentables/resource/{presentableId}[.{extName}]?node
 | :--- | :--- | :--- | :--- |
 |nodeId|必选|int|节点ID|
 |presentableId|必选|string|展示策略ID|
-|extName|可选|string|可选值为[data、js、css、html]|
+|resourceId|可选|string|presentable所属的资源或者子资源,默认为主资源|
+|extName|可选|string|可选值为[datal]|
 |userContractId|可选|string|如果用户有多个合同,此处为用户需要执行的合同ID.默认可以不传,系统会自动查找|
 
 ### extName返回值说明：
@@ -26,9 +27,6 @@ http://api.freelog.com/v1/presentables/resource/{presentableId}[.{extName}]?node
 | :--- | :--- | :--- |
 | [empty] | 系统直接返回当前presentable对应的resource基础信息|
 | data  | 系统直接返回当前presnetable对应的resource文件,即创建资源时上传的文件|
-| js  | 系统直接返回当前presnetable对应的resource文件的js部分|
-| css  | 系统直接返回当前presnetable对应的resource文件的css部分|
-| html  | 系统直接返回当前presnetable对应的resource文件的html部分|
 
 
 ### extName为空时返回说明：
@@ -44,6 +42,7 @@ http://api.freelog.com/v1/presentables/resource/{presentableId}[.{extName}]?node
 | systemMeta| json| 系统追加的meta信息|
 | createDate| string| 资源创建时间|
 | status| int| 资源状态(1:正常 2:发布 3:冻结)|
+
 
 ### extName为data时header返回说明：
 
