@@ -49,6 +49,7 @@
     * [请求获取presentable资源](presentable/请求获取presentable资源.md)
     * [获取策略段身份认证结果](presentable/获取策略段身份认证结果.md)
     * [查询资源所被添加到的节点列表](presentable/查询资源所被添加到的节点列表.md)
+    * [查询presentable的合同信息](presentable/查询presentable的合同信息.md)
 * [支付](pay/README.md)
     * [创建以太坊eth账户](pay/创建以太坊eth账户.md)
     * [下载eth账户的keyStore](pay/下载eth账户的keyStore文件.md)
