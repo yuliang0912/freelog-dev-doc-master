@@ -83,6 +83,7 @@
     * [更新授权点](auth-scheme/更新授权点.md)
     * [查看授权点详情](auth-scheme/查看授权点详情.md)
     * [查看授权点列表](auth-scheme/查看授权点列表.md)
+    * [查看授权点关联的合同](auth-scheme/查看授权点关联的合同.md)
     * [批量签约并发布](auth-scheme/批量签约并发布.md)
     * [删除授权点](auth-scheme/删除授权点.md)
     * [获取授权点的策略段身份认证结果](auth-scheme/获取授权点的策略段身份认证结果.md)
