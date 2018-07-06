@@ -15,6 +15,7 @@ https://api.freelog.com/v1/presentables?nodeId={nodeId}
 | :--- | :--- | :--- | :--- |
 |nodeId|必选|int|节点ID|
 |resourceType|可选|string|资源类型|
+|isOnline|可选|int|是否上线(0:下线 1:上线 2:全部) 默认上线|
 |tags|可选|string|用户创建presentable时设置的自定义标签,多个用","分割|
 
 
