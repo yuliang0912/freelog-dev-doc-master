@@ -15,7 +15,7 @@ http://api.freelog.com/v1/auths/presentable/{presentableId}?nodeId={nodeId}&user
 | :--- | :--- | :--- | :--- |
 |nodeId|必选|int|节点ID|
 |presentableId|必选|string|展示策略ID|
-|userContractId|可选|string|如果用户有多个合同,此处为用户需要执行的合同ID.默认可以不传,系统会自动查找|
+|userContractId|可选|string|用户有多个合同时明确要执行的合同.默认系统会自动匹配|
 
 
 ### http-header返回说明：
