@@ -48,6 +48,7 @@
     * [查看presentable详情](presentable/查看presentable详情.md)
     * [查看节点的presentable列表](presentable/查看节点的presentable列表.md)
     * [请求获取presentable资源](presentable/请求获取presentable资源.md)
+    * [请求获取presentable资源的子级资源](presentable/请求获取presentable资源的子级资源.md)
     * [获取策略段身份认证结果](presentable/获取策略段身份认证结果.md)
     * [查询资源所被添加到的节点列表](presentable/查询资源所被添加到的节点列表.md)
     * [查询presentable的合同信息](presentable/查询presentable的合同信息.md)
