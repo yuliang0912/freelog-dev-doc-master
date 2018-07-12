@@ -5,7 +5,7 @@
 ### 接口地址:
 
 ```
-http://api.freelog.com/v1/auths/presentable/subResource/{resourceId}?token={token}
+https://api.freelog.com/v1/auths/presentable/subResource/{resourceId}?token={token}
 
 ```
 
@@ -14,7 +14,7 @@ http://api.freelog.com/v1/auths/presentable/subResource/{resourceId}?token={toke
 | 参数 | 必选 | 类型及范围 | 说明 |
 | :--- | :--- | :--- | :--- |
 |resourceId|必选|string|资源ID|
-|token|必选|string|授权token,从http-header[sub-resourceId-auth-token]中获取|
+|token|必选|string|授权token,从http-header[sub-resource-auth-token]中获取|
 
 
 ### http-header返回说明：

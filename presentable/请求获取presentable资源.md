@@ -5,7 +5,7 @@
 ### 接口地址:
 
 ```
-http://api.freelog.com/v1/auths/presentable/{presentableId}?nodeId={nodeId}&userContractId={userContractId}
+https://api.freelog.com/v1/auths/presentable/{presentableId}?nodeId={nodeId}&userContractId={userContractId}
 
 ```
 
@@ -24,8 +24,8 @@ http://api.freelog.com/v1/auths/presentable/{presentableId}?nodeId={nodeId}&user
 | freelog-sub-resourceIds | string | presentbale的子资源(没有子资源时不存在该属性)|
 | freelog-sub-resource-auth-token | string | presentbale的子资源的授权token(没有子资源时不存在该属性)|
 | freelog-resource-type | string | 资源类型|
-| freelog-meta | json-string-base64 | 资源meta信息,经过base64编码的json字符串|
-| freelog-system-meta | json-string-base64 | 资源的系统meta,经过base64编码的json字符串 |
+| freelog-meta | string | 资源meta信息,encodeURIComponent编码过的json字符串|
+| freelog-system-meta | string | 资源的系统meta,encodeURIComponent编码过的json字符串 |
 
 
 ### http-response : FileStream

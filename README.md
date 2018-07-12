@@ -25,7 +25,7 @@
 
 ## 接口地址:
 
-* 外网地址：[http://api.freelog.com](https://api.freelog.com)
+* 外网地址：[https://api.freelog.com](https://api.freelog.com)
 
 * 内网地址：[http://192.168.0.3:1201](http://192.168.0.3:1201)
 
