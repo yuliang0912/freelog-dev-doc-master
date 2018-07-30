@@ -4,7 +4,7 @@
 ### 调用方式: GET
 
 ```
-https://api.freelog.com/v1/pay/accounts/clearKeyStore
+https://api.freelog.com/v1/pay/helper/feather/clearKeyStore
 ```
 
 ### url传入参数说明：

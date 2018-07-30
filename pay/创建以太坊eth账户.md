@@ -5,7 +5,7 @@
 ### 接口地址:
 
 ```
-https://api.freelog.com/v1/pay/accounts/createEthAccount
+https://api.freelog.com/v1/pay/helper/feather/createEthAccount
 ```
 
 ### body传入参数说明：
@@ -29,6 +29,7 @@ https://api.freelog.com/v1/pay/accounts/createEthAccount
 | :--- | :--- | :--- |
 | address | string | 账户地址
 | userId | int | 用户ID
+
 
 ### 返回示例
 

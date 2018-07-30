@@ -6,7 +6,7 @@
 ### 接口地址:
 
 ```
-https://api.freelog.com/v1/pay/accounts/downLoadKeyStore
+https://api.freelog.com/v1/pay/helper/feather/downLoadKeyStore
 ```
 
 ### url传入参数说明：
