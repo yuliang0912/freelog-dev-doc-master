@@ -25,7 +25,7 @@
     * [上传资源源文件](resource/上传资源源文件.md)
     * [上传资源预览图](resource/上传资源预览图.md)
 * [合同](contract/README.md)
-    * [创建合同](contract/创建合同.md)
+    * [C端用户创建合同](contract/创建合同.md)
     * [查看合同详情](contract/查看合同详情.md)
     * [查看合同列表](contract/查看合同列表.md)
     * [根据多条件查询合同列表](contract/根据多条件查询合同列表.md)
