@@ -39,6 +39,7 @@
     * [付款](contract-event/付款.md)
     * [保证金没收](contract-event/保证金没收.md)
     * [保证金赎回](contract-event/保证金赎回.md)
+    * [自定义事件执行](contract-event/自定义事件执行.md)
 * [节点](node/README.md)
     * [创建节点](node/创建节点.md)
     * [查看节点详情](node/查看节点详情.md)
