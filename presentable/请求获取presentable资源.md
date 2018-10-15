@@ -15,10 +15,10 @@ https://api.freelog.com/v1/auths/presentable/{presentableId}?nodeId={nodeId}&use
 | :--- | :--- | :--- | :--- |
 |nodeId|必选|int|节点ID|
 |presentableId|必选|string|展示策略ID|
-|userContractId|可选|string|用户有多个合同时明确要执行的合同.默认系统会自动匹配|
 
 
 ### http-header返回说明：
+
 | 返回值字段 | 字段类型 | 字段说明 |
 | :--- | :--- | :--- |
 | freelog-sub-resourceIds | string | presentbale的子资源(没有子资源时不存在该属性)|
