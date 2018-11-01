@@ -19,7 +19,8 @@ https://api.freelog.com/v1/presentables/{presentableId}
 
 | 参数 | 必选 | 类型及范围 | 说明 |
 | :--- | :--- | :--- | :--- |
-|presentableName|可选|string|presentable名称
+|presentableName|可选|string|presentable名称|
+|presentableIntro|可选|string|presentable描述|
 |userDefinedTags|可选|string[]| 用户自定义的tags |
 |policies|可选|object| 授权策略段 |
 |isOnline|可选|int|是否上线 0:否 1:是 合同,策略与presentable完备才可以上线|
@@ -32,7 +33,7 @@ https://api.freelog.com/v1/presentables/{presentableId}
 |****policyName|必选|string| 策略名称 |
 |****status|必选|int| 策略状态 (0:不显示 1:显示) |
 |contracts|可选|object[]| 当前presentable与资源以及上抛资源的执行合约信息,部分变更需要回传全部 |
-|****resouceId|必选|string| 资源ID |
+|****resourceId|必选|string| 资源ID |
 |****policySegmentId|可选|string| 策略段落ID |
 |****authSchemeId|可选|string| 授权点ID |
 |****contractId|可选|string|合同ID|
@@ -43,6 +44,7 @@ https://api.freelog.com/v1/presentables/{presentableId}
 ```js
 {
 	"presentableName": "presentableName",
+	"presentableIntro": "描述,简介",
 	"userDefinedTags": ["tag1","tag2"],
   	"policies":{
   	    "updatePolicySegments": [{
@@ -65,6 +67,7 @@ https://api.freelog.com/v1/presentables/{presentableId}
 | :--- | :--- | :--- |
 | presentableId | string | 展示方案ID|
 | presentableName | string | 展示方案名称 |
+| presentableIntro | string | 展示方案描述 |
 | resourceId | string | 方案对应的资源ID |
 | userId | int| 创建方案的用户ID |
 | nodeId | int| 节点ID |

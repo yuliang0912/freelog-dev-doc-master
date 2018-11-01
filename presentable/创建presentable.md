@@ -17,12 +17,14 @@ https://api.freelog.com/v1/presentables/
 |nodeId|必选|int|节点ID |
 |resourceId|必选|string|资源ID|
 |presentableName|可选|string|presentable名称|
+|presentableIntro|可选|string|presentable描述|
 
 ### body示例
 
 ```js
 {
     "presentableName": "我的方案1",
+    "presentableIntro": "presentable描述",
     "nodeId": 10015,
     "resourceId": "004c19dd7d2257436e9e238abf1b6ef6e639e2bf"
 }
@@ -59,6 +61,7 @@ https://api.freelog.com/v1/presentables/
 	"data": {
 		"presentableId": "5b05152faaaef01564d40a7b",
 		"presentableName": "",
+		"presentableIntro":"",
 		"resourceId": "004c19dd7d2257436e9e238abf1b6ef6e639e2bf",
 		"userId": 10026,
 		"nodeId": 10015,
