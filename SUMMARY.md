@@ -47,8 +47,6 @@
     * [查看节点列表](node/查看节点列表.md)
     * [根据节点ID获取节点列表](node/根据节点ID获取节点列表.md)
     * [更新节点信息](node/更新节点信息.md)
-    * [节点修改pageBuild状态](node/节点修改pageBuild状态.md)
-    * [节点查看自己的pageBuild](node/节点查看自己的pageBuild列表.md)
     * [创建自定义数据存储](node/创建自定义数据存储.md)
     * [查询自定义数据存储](node/查询自定义数据存储.md)
     * [更新自定义数据存储](node/更新自定义数据存储.md)
