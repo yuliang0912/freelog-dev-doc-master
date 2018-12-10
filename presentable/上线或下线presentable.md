@@ -1,11 +1,11 @@
-# 更新presentable
+# 上线或下线presentable
 
 ### 调用方式: PUT
 
 ### 接口地址:
 
 ```
-https://api.freelog.com/v1/presentables/{presentableId}
+https://api.freelog.com/v1/presentables/{presentableId}/onlineOrOffline
 ```
 
 ### url传入参数说明：
@@ -15,48 +15,17 @@ https://api.freelog.com/v1/presentables/{presentableId}
 |presentableId|必选|string|presentableId
 
 
-### body传入参数说明： (contracts字段中,如果选择之前的合约,则只需填写resourceId和contractId即可.如果是新选择的策略,则填resourceId,policySegmentId,authSchemeId)
+### body传入参数说明：
 
 | 参数 | 必选 | 类型及范围 | 说明 |
 | :--- | :--- | :--- | :--- |
-|presentableName|可选|string|presentable名称|
-|presentableIntro|可选|string|presentable描述|
-|userDefinedTags|可选|string[]| 用户自定义的tags |
-|policies|可选|object| 授权策略段 |
-|**addPolicySegments|可选|object[]| 新增的授权策略段 |
-|****policyName|必选|string| 策略名称 |
-|****policyText|必选|string| 策略文本,base64编码 |
-|**removePolicySegments|可选|string[]| 需要删除的授权策略段,此处传segmentId |
-|**updatePolicySegments|可选|object[]| 需要更新的授权策略段 |
-|****policySegmentId|必选|string| 策略段落ID |
-|****policyName|必选|string| 策略名称 |
-|****status|必选|int| 策略状态 (0:不显示 1:显示) |
-|contracts|可选|object[]| 当前presentable与资源以及上抛资源的执行合约信息,部分变更需要回传全部 |
-|****resourceId|必选|string| 资源ID |
-|****policySegmentId|可选|string| 策略段落ID |
-|****authSchemeId|可选|string| 授权点ID |
-|****contractId|可选|string|合同ID|
-
+|isOnline|必选|int|0:下线 1:上线|
 
 ### body示例
 
 ```js
 {
-	"presentableName": "presentableName",
-	"presentableIntro": "描述,简介",
-	"userDefinedTags": ["tag1","tag2"],
-  	"policies":{
-  	    "updatePolicySegments": [{
-          	"policySegmentId":"a68379dd361e74a89a37fce7a8b8d989",
-			"policyName": "新的方案1",
-            "status":0
-		}]
-  	},
-  	"contracts":[{
-      "resourceId":"2900eac4e4c8d96649901ac20a245b7bfa68ba8e",
-      "authSchemeId":"5afb9e67f313cc4d88a3f9a1",
-      "policySegmentId":"397c06bd49cb3712437890c9cdf8b222"
-  	}]
+    "isOnline": 1
 }
 ```
 
@@ -79,7 +48,7 @@ https://api.freelog.com/v1/presentables/{presentableId}
 | **resourceType| string| 资源类型 |
 | contracts | object[]| 当前presentable关联的执行合同 |
 | isOnline | int| 是否上线 0:否 1:是 |
-| status | int| 状态 1:合同已完备  2:存在可用策略 总状态通过\|运算 |
+| status | int| 状态 1:合同已完备  2:存在可用策略 4:具备presentable签约授权 总状态通过\|运算 |
 
 ### 返回示例
 

@@ -56,6 +56,7 @@
 * [presentable](presentable/README.md)
     * [创建presentable](presentable/创建presentable.md)
     * [更新presentable](presentable/更新presentable.md)
+    * [上线或下线presentable](presentable/上线或下线presentable.md)
     * [查看presentable详情](presentable/查看presentable详情.md)
     * [查看节点的presentable列表](presentable/查看节点的presentable列表.md)
     * [请求获取presentable资源](presentable/请求获取presentable资源.md)
