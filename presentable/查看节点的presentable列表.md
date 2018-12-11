@@ -28,6 +28,7 @@ https://api.freelog.com/v1/presentables?nodeId={nodeId}
 | presentableId | string | 展示方案ID|
 | presentableName | string | 展示方案名称 |
 | resourceId | string | 方案对应的资源ID |
+| masterContractId | string | 主合同ID |
 | userId | int| 创建方案的用户ID |
 | nodeId | int| 节点ID |
 | nodeName | string| 节点名称 |
@@ -117,6 +118,7 @@ https://api.freelog.com/v1/presentables?nodeId={nodeId}
 			"isOnline": 1,
 			"status": 7,
 			"nodeId": 10015,
+			"masterContractId": "5bc03c0d88ea6b34305486f9",
 			"resourceId": "0bee49c19387521a79aeff78504425dde0ee4897",
 			"userId": 10026,
 			"nodeName": "demo",
