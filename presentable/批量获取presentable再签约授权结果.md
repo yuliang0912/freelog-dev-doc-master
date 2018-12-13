@@ -6,7 +6,6 @@
 
 ```
 https://api.freelog.com/v1/auths/presentable/getPresentableSignAuth?presentableIds={presentableId}
-
 ```
 
 ### url传入参数说明：

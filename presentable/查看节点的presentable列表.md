@@ -19,7 +19,9 @@ https://api.freelog.com/v1/presentables?nodeId={nodeId}
 |resourceType|可选|string|资源类型|
 |isOnline|可选|int|是否上线(0:下线 1:上线 2:全部) 默认上线|
 |tags|可选|string|用户创建presentable时设置的自定义标签,多个用","分割|
-
+|projection|可选|string|指定返回的字段,多个用逗号分隔|
+|isSignContract|可选|int|是否签约(0:未签约 1:已签约 2:全部) 默认全部|
+|keywords|可选|string[1,100]|搜索关键字,目前支持模糊搜索节点资源名称和资源名称|
 
 ### 返回说明：
 
