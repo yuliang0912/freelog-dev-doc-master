@@ -23,6 +23,7 @@ https://api.freelog.com/v1/presentables/getPresentableContractState?presentableI
 | status | int | 是否全部激活 0:未全部激活 1:全部激活 |
 
 ### 返回示例
+```js
 {
 	"ret": 0,
 	"errcode": 0,
@@ -32,3 +33,4 @@ https://api.freelog.com/v1/presentables/getPresentableContractState?presentableI
 		"status": 1
 	}]
 }
+```

@@ -23,6 +23,7 @@ https://api.freelog.com/v1/auths/presentable/getPresentableSignAuth?presentableI
 | isAcquireSignAuth | int | 是否获得签约授权,0:未获得 1:已获得 -1:无效的节点资源 |
 
 ### 返回示例
+```js
 {
 	"ret": 0,
 	"errcode": 0,
@@ -32,3 +33,4 @@ https://api.freelog.com/v1/auths/presentable/getPresentableSignAuth?presentableI
 		"isAcquireSignAuth": 0
 	}]
 }
+```
