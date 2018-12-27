@@ -71,7 +71,7 @@ https://api.freelog.com/v1/presentables?nodeId={nodeId}
 					"userType": "GROUP",
 					"users": ["REGISTERED_USERS"]
 				}],
-				"policyText": "for REGISTERED_USERS:\n    escrow account acct\ninitial:\n    proceed to signed on accepting agreement @e759419923ea25bf6dff2694391a1e65c21739ce\nsigned:\n    proceed to auth on acct exceed 10 feather\nauth:\n    active\n    terminate",
+				"policyText": "for REGISTERED_USERS:\n    escrow account acct\initial:\n    proceed to signed on accepting agreement @e759419923ea25bf6dff2694391a1e65c21739ce\nsigned:\n    proceed to auth on acct exceed 10 feather\nauth:\n    active\n    terminate",
 				"fsmDeclarations": {
 					"acct": {
 						"type": "escrowaccount",
