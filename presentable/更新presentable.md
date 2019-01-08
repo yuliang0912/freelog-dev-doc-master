@@ -34,7 +34,7 @@ https://api.freelog.com/v1/presentables/{presentableId}
 |contracts|可选|object[]| 当前presentable与资源以及上抛资源的执行合约信息,部分变更需要回传全部 |
 |****resourceId|必选|string| 资源ID |
 |****policySegmentId|可选|string| 策略段落ID |
-|****authSchemeId|可选|string| 授权点ID |
+|****authSchemeId|可选|string| 授权方案ID |
 |****contractId|可选|string|合同ID|
 
 
