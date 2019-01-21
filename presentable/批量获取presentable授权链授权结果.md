@@ -1,11 +1,11 @@
-# 批量获取presentable合同激活状态(仅节点作为乙方签约的合同)
+# 批量获取授权链授权结果(再签约授权,合同授权)
 
 ### 调用方式: GET
 
 ### 接口地址:
 
 ```
-https://api.freelog.com/v1/presentables/getPresentableContractState?presentableIds={presentableId}&nodeId={nodeId}
+https://api.freelog.com/v1/presentables/getPresentableContractChainAuth?presentableIds={presentableIds}&nodeId={nodeId}
 ```
 
 ### url传入参数说明：
@@ -20,7 +20,7 @@ https://api.freelog.com/v1/presentables/getPresentableContractState?presentableI
 | 返回值字段 | 字段类型 | 字段说明 |
 | :--- | :--- | :--- |
 | presentableId | string | 展示方案ID|
-| status | int | 是否全部激活 0:未全部激活 1:全部激活 |
+| authResult | int | 0:无效 1:授权通过  2:未获得再签约授权  3:未获得合同授权 |
 
 ### 返回示例
 ```js
@@ -29,8 +29,11 @@ https://api.freelog.com/v1/presentables/getPresentableContractState?presentableI
 	"errcode": 0,
 	"msg": "success",
 	"data": [{
-		"presentableId": "5c0e3435bfc645002bd59f04",
-		"status": 1
+		"presentableId": "5c403a99b94000002998a9d7",
+		"authResult": 1
+	}, {
+		"presentableId": "5c403afdb94000002998a9de",
+		"authResult": 1
 	}]
 }
 ```

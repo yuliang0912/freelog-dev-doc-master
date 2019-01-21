@@ -66,6 +66,7 @@
     * [presentable预授权测试](presentable/presentable预授权测试.md)
     * [批量获取presentable再签约授权结果](presentable/批量获取presentable再签约授权结果.md)
     * [批量获取presentable合同激活状态](presentable/批量获取presentable合同激活状态.md)
+    * [批量获取授权链授权结果](presentable/批量获取presentable授权链授权结果.md)
 * [支付](pay/README.md)
     * [创建个人支付账户](pay/创建支付账户.md)
     * [创建节点支付账户](pay/创建节点支付账户.md)
