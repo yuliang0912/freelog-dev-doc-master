@@ -5,7 +5,7 @@
 ### 接口地址:
 
 ```
-https://api.freelog.com/v1/presentables/getPresentableContractChainAuth?presentableIds={presentableIds}&nodeId={nodeId}
+https://api.freelog.com/v1/auths/presentables/getPresentableContractChainAuth?presentableIds={presentableIds}&nodeId={nodeId}
 ```
 
 ### url传入参数说明：
