@@ -113,7 +113,7 @@
 * [验证码](verification-code/README.md)
     * [获取图片验证码](verification-code/获取图片验证码.md)
     * [校验图片验证码是否正确](verification-code/校验验证码是否正确.md)
-    * [发送账号注册验证码](verification-code/发送账号注册验证码.md)
+    * [发送短信验证码](verification-code/发送短信验证码.md)
 * [附表](附表/README.md)
     * [retCode](附表/一级状态码.md)
     * [errCode](附表/二级状态码.md)
