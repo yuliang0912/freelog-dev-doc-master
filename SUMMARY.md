@@ -13,6 +13,7 @@
     * [上传头像](user/上传头像.md)
 * [发行](release/README.md)
     * [创建新发行](release/创建新发行.md)
+    * [更新发行](release/更新发行.md)
     * [根据ID查看发行详情](release/根据ID查看发行详情.md)
     * [根据名字查看发行详情](release/根据名字查看发行详情.md)
     * [查看发行分页列表](release/查看发行分页列表.md)
