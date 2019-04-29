@@ -26,7 +26,7 @@
 * [资源](resource/README.md)
     * [创建资源](resource/创建资源.md)
     * [更新资源信息](resource/更新资源信息.md)
-    * [查看资源列表](resource/查看资源列表.md)
+    * [查看资源分页列表](resource/查看资源分页列表.md)
     * [查看单个资源详情](resource/查看单个资源详情.md)
     * [批量查询资源列表](resource/批量查询资源列表.md)
     * [上传资源源文件](resource/上传资源源文件.md)
