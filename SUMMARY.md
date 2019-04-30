@@ -31,6 +31,7 @@
     * [批量查询资源列表](resource/批量查询资源列表.md)
     * [上传资源源文件](resource/上传资源源文件.md)
     * [上传资源预览图](resource/上传资源预览图.md)
+    * [下载资源源文件](resource/下载资源源文件.md)
 * [mock资源](mock-resource/README.md)
     * [创建mock资源](mock-resource/创建mock资源.md)
     * [更新mock资源信息](mock-resource/更新mock资源信息.md)
