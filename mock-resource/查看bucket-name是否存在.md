@@ -1,4 +1,4 @@
-# 查看bucket是否存在
+# 查看bucket-name是否存在
 
 ### 调用方式: GET
 
