@@ -49,6 +49,8 @@
     * [收藏发行](collection/收藏发行.md)
     * [查看收藏的发行列表](collection/查看收藏的发行列表.md)
     * [删除收藏的发行](collection/删除收藏的发行.md)
+    * [查看收藏的发行详情](collection/查看收藏的发行详情.md)
+    * [批量查询发行是否收藏](collection/批量查询发行是否收藏.md)
 * [合同](contract/README.md)
     * [C端用户创建合同](contract/创建合同.md)
     * [查看合同详情](contract/查看合同详情.md)
