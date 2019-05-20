@@ -38,7 +38,7 @@ https://api.freelog.com/v1/resources/mocks
 
 | 返回值字段 | 字段类型 | 字段说明 |
 | :--- | :--- | :--- |
-| id | string | mock资源ID|
+| mockResourceId | string | mock资源ID|
 | resourceType | string | 资源类型[[详见附表]][资源类型] |
 | name | string | mock资源名 |
 | description|string|资源描述|
@@ -51,29 +51,30 @@ https://api.freelog.com/v1/resources/mocks
 
 ```js
 {
-	"ret": 0,
-	"errcode": 0,
-	"msg": "success",
-	"data": {
-		"previewImages": [],
-		"status": 0,
-		"name": "my-first-mock-resource-1",
-		"sha1": "71fd7e3de0e9fe3d4f9c83e91d40a9f7cd2c8a39",
-		"userId": 10026,
-		"resourceType": "markdown",
-		"systemMeta": {
-			"dependencies": [],
-			"sha1": "71fd7e3de0e9fe3d4f9c83e91d40a9f7cd2c8a39",
-			"fileSize": 7206,
-			"mimeType": "text/markdown"
-		},
-		"bucketId": "5c8b115192abd02280a188f3",
-		"bucketName": "yuliang",
-		"description": "",
-		"createDate": "2019-04-24T06:55:42.077Z",
-		"updateDate": "2019-04-24T06:55:42.077Z",
-		"id": "5cc0086e71dee53dc8ff6c12",
-		"meta": {}
-	}
+    "ret": 0,
+    "errcode": 0,
+    "msg": "success",
+    "data": {
+        "mockResourceId": "5ce26c5356c28e5be8b51e5e",
+        "fullName": "yuliang/markdown-file-1",
+        "previewImages": [],
+        "status": 0,
+        "name": "markdown-file-1",
+        "sha1": "81024b25db669618cb79823df0f9005776d6141a",
+        "userId": 10026,
+        "resourceType": "markdown",
+        "systemMeta": {
+            "sha1": "81024b25db669618cb79823df0f9005776d6141a",
+            "fileSize": 394,
+            "mimeType": "text/plain",
+            "dependencies": []
+        },
+        "bucketId": "5c8b115192abd02280a188f3",
+        "bucketName": "yuliang",
+        "description": "",
+        "createDate": "2019-05-20T08:58:59.390Z",
+        "updateDate": "2019-05-20T08:58:59.390Z",
+        "meta": {}
+    }
 }
 ```
