@@ -10,136 +10,124 @@ https://api.freelog.com/v1/presentables/{presentableId}
 
 ### url传入参数说明：
 
-| 参数 | 必选 | 类型及范围 | 说明 |
-| :--- | :--- | :--- | :--- |
-|presentableId|必选|string|presentableId
+| 参数 | 必选 | 类型及范围 | 说明  |
+| :--- | :--- | :--- | :---  |
+| presentableId | 必选 | string | presentableId
 
 
-### body传入参数说明： (contracts字段中,如果选择之前的合约,则只需填写resourceId和contractId即可.如果是新选择的策略,则填resourceId,policySegmentId,authSchemeId)
+### body传入参数说明：
 
-| 参数 | 必选 | 类型及范围 | 说明 |
-| :--- | :--- | :--- | :--- |
-|presentableName|可选|string|presentable名称|
-|presentableIntro|可选|string|presentable描述|
-|userDefinedTags|可选|string[]| 用户自定义的tags |
-|policies|可选|object| 授权策略段 |
-|**addPolicySegments|可选|object[]| 新增的授权策略段 |
-|****policyName|必选|string| 策略名称 |
-|****policyText|必选|string| 策略文本,base64编码 |
-|**removePolicySegments|可选|string[]| 需要删除的授权策略段,此处传segmentId |
-|**updatePolicySegments|可选|object[]| 需要更新的授权策略段 |
-|****policySegmentId|必选|string| 策略段落ID |
-|****policyName|必选|string| 策略名称 |
-|****status|必选|int| 策略状态 (0:不显示 1:显示) |
-|contracts|可选|object[]| 当前presentable与资源以及上抛资源的执行合约信息,部分变更需要回传全部 |
-|****resourceId|必选|string| 资源ID |
-|****policySegmentId|可选|string| 策略段落ID |
-|****authSchemeId|可选|string| 授权方案ID |
-|****contractId|可选|string|合同ID|
-
+| 参数 | 必选 | 类型及范围 | 说明  |
+| :--- | :--- | :--- | :---  | 
+| presentableName | 可选 | string | presentable名称 |
+| presentableIntro | 可选 | string | presentable描述 |
+| userDefinedTags | 可选 | string[] |  用户自定义的tags  |
+| policyInfo | 可选 | object |  授权策略段  |
+| **addPolicies | 可选 | object[] |  新增的授权策略段  |
+| ****policyName | 必选 | string |  策略名称  |
+| ****policyText | 必选 | string |  策略文本,base64编码  |
+| **updatePolicies | 可选 | object[] |  需要更新的授权策略段  |
+| ****policyId | 必选 | string |  策略ID  |
+| ****policyName | 必选 | string |  策略名称  |
+| ****status | 必选 | int |  策略状态 (0:不显示 1:显示)  |
+| intro | 可选 | string | presentable简介 |
+| resolveReleases | 必选 | object[] | 发行以及其上抛的解决方式 |
+| **releaseId | 必选 | string | 解决的发行ID |
+| **contracts | 必选 | object[] | 解决的发行的策略 |
+| ****policyId | 必选 | string | 选中的策略 |
 
 ### body示例
 
 ```js
 {
-	"presentableName": "presentableName",
-	"presentableIntro": "描述,简介",
-	"userDefinedTags": ["tag1","tag2"],
-  	"policies":{
-  	    "updatePolicySegments": [{
-          	"policySegmentId":"a68379dd361e74a89a37fce7a8b8d989",
-			"policyName": "新的方案1",
-            "status":0
+	"presentableName": "update presentable",
+	"userDefinedTags": ["tagA", "tagB", "tagC"],
+	"intro": "intro1",
+	"resolveReleases": [{
+		"releaseId": "5cb039815a791845b4aed4ab",
+		"contracts": [{
+			"policyId": "8cefe2f1dcc6dd0bdaadac946cb63dbc"
 		}]
-  	},
-  	"contracts":[{
-      "resourceId":"2900eac4e4c8d96649901ac20a245b7bfa68ba8e",
-      "authSchemeId":"5afb9e67f313cc4d88a3f9a1",
-      "policySegmentId":"397c06bd49cb3712437890c9cdf8b222"
-  	}]
+	}]
 }
 ```
 
 ### 返回说明：
 
-| 返回值字段 | 字段类型 | 字段说明 |
-| :--- | :--- | :--- |
-| presentableId | string | 展示方案ID|
-| presentableName | string | 展示方案名称 |
-| presentableIntro | string | 展示方案描述 |
-| resourceId | string | 方案对应的资源ID |
-| userId | int| 创建方案的用户ID |
-| nodeId | int| 节点ID |
-| nodeName | string| 节点名称 |
-| policy| object[]| 展示方案策略组 (示例数据仅做参考)|
-| createDate| date|创建日期|
-| userDefinedTags| string[]| 用户定义的tags |
-| resourceInfo| object| presentable对应的资源基础信息 |
-| **resourceName| string| 资源名称 |
-| **resourceType| string| 资源类型 |
-| contracts | object[]| 当前presentable关联的执行合同 |
-| isOnline | int| 是否上线 0:否 1:是 |
-| status | int| 状态 1:合同已完备  2:存在可用策略 总状态通过\|运算 |
+|  返回值字段 | 字段类型 | 字段说明  |
+|  :--- | :--- | :---  |
+|  presentableId | string | 展示方案ID |
+|  presentableName | string | 展示方案名称  |
+|  userDefinedTags |  string[] |  用户定义的tags  |
+|  intro  | string | presentable简介  |
+|  isOnline | int |  是否上线 0:否 1:是  |
+|  userId | int |  创建方案的用户ID  |
+|  nodeId | int |  节点ID  |
+|  resolveReleases | object[] | 发行以及其上抛的解决方式 |
+|  **releaseId | string | 解决的发行ID |
+|  **releaseName | string | 解决的发行名称 |
+|  **contracts | object[] | 解决的发行的策略 |
+|  ****policyId | string | 选中的策略ID |
+|  ****contractId | string | 策略生成的合约ID |
+|  policies |  object[] |  对外销售的方案策略组 |
+|  releaseInfo |  object | presentable引用的发行基础信息 |
+|  **releaseId |  string | 发行ID |
+|  **releaseName |  string | 发行名称 |
+|  **resourceType |  string | 资源类型 |
+|  **version |  string | 引用的版本号 |
+|  createDate |  date | 创建日期 |
+
 
 ### 返回示例
 
 ```js
 {
-    "ret": 0,
-    "errcode": 0,
-    "msg": "success",
-    "data": {
-        "presentableId": "5b0d1ca255d4055cf84bdb73",
-        "presentableName": "presentableName",
-        "resourceId": "2900eac4e4c8d96649901ac20a245b7bfa68ba8e",
-        "userId": 10026,
-        "nodeId": 10015,
-        "nodeName": "demo",
-        "createDate": "2018-05-29T09:25:54.043Z",
-        "updateDate": "2018-05-30T08:10:30.236Z",
-        "contracts": [
-            {
-                "resourceId": "2900eac4e4c8d96649901ac20a245b7bfa68ba8e",
-                "authSchemeId": "5afb9e67f313cc4d88a3f9a1",
-                "policySegmentId": "397c06bd49cb3712437890c9cdf8b222",
-                "contractId": "5b0e4d772868266bb8055c1f"
-            }
-        ],
-        "policy": [
-            {
-                "segmentId": "a68379dd361e74a89a37fce7a8b8d989",
-                "policyName": "新的方案1",
-                "segmentText": "for public: in <init> : terminate",
-                "users": [
-                    {
-                        "userType": "group",
-                        "users": [
-                            "public"
-                        ]
-                    }
-                ],
-                "fsmDescription": [
-                    {
-                        "currentState": "<init>"
-                    }
-                ],
-                "activatedStates": [
-                    "<init>"
-                ],
-                "initialState": "<init>",
-                "terminateState": "terminate",
-                "status": 0
-            }
-        ],
-        "userDefinedTags": [
-            "tag1",
-            "tag2"
-        ],
-        "resourceInfo": {
-            "resourceName": "我的资源",
-            "resourceType": "license"
-        },
-        "status": 0
-    }
+	"ret": 0,
+	"errcode": 0,
+	"msg": "success",
+	"data": {
+		"presentableId": "5cde533c1e6b38334876b318",
+		"presentableName": "my-presentable",
+		"userDefinedTags": ["tag1", "tag2", "tag3"],
+		"intro": "简介",
+		"isOnline": 0,
+		"contractStatus": 0,
+		"status": 0,
+		"userId": 50003,
+		"resolveReleases": [{
+			"contracts": [{
+				"contractId": "5cce9f33ffbf3642dc291979",
+				"policyId": "8cefe2f1dcc6dd0bdaadac946cb63dbc"
+			}],
+			"releaseId": "5cb039815a791845b4aed4ab",
+			"releaseName": "b1"
+		}, {
+			"contracts": [{
+				"contractId": "5cdd25e58b01222dac2620d6",
+				"policyId": "8cefe2f1dcc6dd0bdaadac946cb63dbc"
+			}],
+			"releaseId": "5cc1271a204f822804244992",
+			"releaseName": "a-a-b-6"
+		}],
+		"policies": [{
+			"authorizedObjects": [{
+				"userType": "GROUP",
+				"users": ["PUBLIC"]
+			}],
+			"policyName": "免费策略",
+			"status": 1,
+			"policyText": "for public:\n  initial:\n    active\n    recontractable\n    presentable\n    terminate",
+			"policyId": "8cefe2f1dcc6dd0bdaadac946cb63dbc"
+		}],
+		"nodeId": 80000003,
+		"releaseInfo": {
+			"releaseId": "5cc1271a204f822804244992",
+			"releaseName": "a-a-b-6",
+			"resourceType": "markdown",
+			"version": "0.1.0"
+		},
+		"createDate": "2019-05-17T06:22:52.382Z",
+		"updateDate": "2019-05-17T06:22:52.445Z"
+	}
 }
 ```

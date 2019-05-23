@@ -1,4 +1,6 @@
-# 删除presentable
+# ~~删除presentable~~
+
+## 改版之后理论上不允许删除presentable,因为创建时就产生了合约
 
 ### 调用方式: DELETE
 

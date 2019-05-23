@@ -1,6 +1,5 @@
 # 创建presentable
 
-
 ### 调用方式: POST
 
 ### 接口地址:
@@ -13,20 +12,37 @@ https://api.freelog.com/v1/presentables/
 
 | 参数 | 必选 | 类型及范围 | 说明 |
 | :--- | :--- | :--- | :--- |
-|name|必选|string|presentable名称
-|nodeId|必选|int|节点ID |
-|resourceId|必选|string|资源ID|
-|presentableName|可选|string|presentable名称|
-|presentableIntro|可选|string|presentable描述|
+| nodeId | 必选 | int | 节点ID  |
+| releaseId | 必选 | string | 发行ID |
+| version | 必选 | string | 引用的发行具体版本 |
+| resolveReleases | 必选 | object[] | 发行以及其上抛的解决方式 |
+| **releaseId | 必选 | string | 解决的发行ID |
+| **contracts | 必选 | object[] | 解决的发行的策略 |
+| ****policyId | 必选 | string | 选中的策略 |
+| policies | 可选 | object[] | 对外提供的策略集合 |
+| **policyName | 必选 | string | 策略名称 |
+| **policyText | 必选 | string | 策略文本,base64编码 |
+| presentableName | 可选 | string | presentable名称,默认为发行名 |
+| intro | 可选 | string | presentable简介 |
+| userDefinedTags | 可选 | string[] | 用户自定义的tag,最多20个 |
 
 ### body示例
 
 ```js
 {
-    "presentableName": "我的方案1",
-    "presentableIntro": "presentable描述",
-    "nodeId": 10015,
-    "resourceId": "004c19dd7d2257436e9e238abf1b6ef6e639e2bf"
+    "nodeId":80000003,
+	"releaseId":"5cb039815a791845b4aed4ab",
+    "presentableName":"my-presentable",
+    "version":"0.1.0",
+    "intro":"简介",
+    "userDefinedTags":["tag1","tag2","tag3"],
+    "resolveReleases":[
+      {"releaseId": "5cb039815a791845b4aed4ab","contracts":[{"policyId":"8cefe2f1dcc6dd0bdaadac946cb63dbc"}]}
+    ],
+    "policies": [{
+		"policyName": "免费策略",
+		"policyText": "Zm9yIHB1YmxpYzoKICBpbml0aWFsOgogICAgYWN0aXZlCiAgICByZWNvbnRyYWN0YWJsZQogICAgcHJlc2VudGFibGUKICAgIHRlcm1pbmF0ZQ=="
+	}]
 }
 ```
 
@@ -36,19 +52,24 @@ https://api.freelog.com/v1/presentables/
 | :--- | :--- | :--- |
 | presentableId | string | 展示方案ID|
 | presentableName | string | 展示方案名称 |
-| resourceId | string | 方案对应的资源ID |
+| userDefinedTags| string[]| 用户定义的tags |
+| intro |string | presentable简介 |
+| isOnline | int| 是否上线 0:否 1:是 |
 | userId | int| 创建方案的用户ID |
 | nodeId | int| 节点ID |
-| nodeName | string| 节点名称 |
-| policy| object[]| 展示方案策略组 (示例数据仅做参考)|
+| resolveReleases|object[]|发行以及其上抛的解决方式|
+| ** releaseId|string|解决的发行ID|
+| ** releaseName|string|解决的发行名称|
+| ** contracts|object[]|解决的发行的策略|
+| **** policyId|string|选中的策略ID|
+| **** contractId|string|策略生成的合约ID|
+| policies| object[]| 对外销售的方案策略组|
+| releaseInfo| object|presentable引用的发行基础信息|
+| **releaseId| string|发行ID|
+| **releaseName| string|发行名称|
+| **resourceType| string|资源类型|
+| **version| string|引用的版本号|
 | createDate| date|创建日期|
-| userDefinedTags| string[]| 用户定义的tags |
-| resourceInfo| object| presentable对应的资源基础信息 |
-| **resourceName| string| 资源名称 |
-| **resourceType| string| 资源类型 |
-| contracts | object[]| 当前presentable关联的执行合同 |
-| isOnline | int| 是否上线 0:否 1:是 |
-| status | int| 状态 1:合同已完备  2:存在可用策略 总状态通过\|运算 |
 
 
 ### 返回示例
@@ -59,23 +80,48 @@ https://api.freelog.com/v1/presentables/
 	"errcode": 0,
 	"msg": "success",
 	"data": {
-		"presentableId": "5b05152faaaef01564d40a7b",
-		"presentableName": "",
-		"presentableIntro":"",
-		"resourceId": "004c19dd7d2257436e9e238abf1b6ef6e639e2bf",
-		"userId": 10026,
-		"nodeId": 10015,
-		"nodeName": "demo",
-		"createDate": "2018-05-23T07:15:59.482Z",
-		"updateDate": "2018-05-30T07:58:51.147Z",
-		"contracts": [],
-		"policy": [],
-		"userDefinedTags": [],
-		"resourceInfo": {
-			"resourceName": "pb2",
-			"resourceType": "page_build"
+		"presentableId": "5cde533c1e6b38334876b318",
+		"presentableName": "my-presentable",
+		"userDefinedTags": ["tag1", "tag2", "tag3"],
+		"intro": "简介",
+		"isOnline": 0,
+		"contractStatus": 0,
+		"status": 0,
+		"userId": 50003,
+		"resolveReleases": [{
+			"contracts": [{
+				"contractId": "5cce9f33ffbf3642dc291979",
+				"policyId": "8cefe2f1dcc6dd0bdaadac946cb63dbc"
+			}],
+			"releaseId": "5cb039815a791845b4aed4ab",
+			"releaseName": "b1"
+		}, {
+			"contracts": [{
+				"contractId": "5cdd25e58b01222dac2620d6",
+				"policyId": "8cefe2f1dcc6dd0bdaadac946cb63dbc"
+			}],
+			"releaseId": "5cc1271a204f822804244992",
+			"releaseName": "a-a-b-6"
+		}],
+		"policies": [{
+			"authorizedObjects": [{
+				"userType": "GROUP",
+				"users": ["PUBLIC"]
+			}],
+			"policyName": "免费策略",
+			"status": 1,
+			"policyText": "for public:\n  initial:\n    active\n    recontractable\n    presentable\n    terminate",
+			"policyId": "8cefe2f1dcc6dd0bdaadac946cb63dbc"
+		}],
+		"nodeId": 80000003,
+		"releaseInfo": {
+			"releaseId": "5cc1271a204f822804244992",
+			"releaseName": "a-a-b-6",
+			"resourceType": "markdown",
+			"version": "0.1.0"
 		},
-		"status": 0
+		"createDate": "2019-05-17T06:22:52.382Z",
+		"updateDate": "2019-05-17T06:22:52.445Z"
 	}
 }
 ```
