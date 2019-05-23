@@ -24,6 +24,7 @@
     * [更新发行指定版本的方案](release/更新发行指定版本的方案.md)
     * [添加资源到现有发行](release/添加资源到现有发行.md)
     * [查看发行指定版本的方案](release/查看发行指定版本的方案.md)
+    * [重试签约方案](release/重试签约方案.md)
 * [资源](resource/README.md)
     * [创建资源](resource/创建资源.md)
     * [更新资源信息](resource/更新资源信息.md)
