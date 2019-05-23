@@ -87,7 +87,7 @@
     * [请求获取presentable资源](presentable/请求获取presentable资源.md)
     * [请求获取presentable子资源](presentable/请求获取presentable资源的子级资源.md)
     * [获取策略段身份认证结果](presentable/获取策略段身份认证结果.md)
-    * [查询资源所被添加到的节点](presentable/查询资源所被添加到的节点列表.md)
+    * [查询发行所挂载的节点列表](presentable/查询发行所挂载的节点列表.md)
     * [查询presentable的合同信息](presentable/查询presentable的合同信息.md)
     * [删除presentable](presentable/删除presentable.md)
     * [presentable预授权测试](presentable/presentable预授权测试.md)
