@@ -1,11 +1,11 @@
-# 上线或下线presentable
+# 上下线presentable
 
 ### 调用方式: PUT
 
 ### 接口地址:
 
 ```
-https://api.freelog.com/v1/presentables/{presentableId}/onlineOrOffline
+https://api.freelog.com/v1/presentables/{presentableId}/switchOnlineState
 ```
 
 ### url传入参数说明：
@@ -19,13 +19,13 @@ https://api.freelog.com/v1/presentables/{presentableId}/onlineOrOffline
 
 | 参数 | 必选 | 类型及范围 | 说明 |
 | :--- | :--- | :--- | :--- |
-|isOnline|必选|int|0:下线 1:上线|
+|onlineState|必选|int| 上线状态 0:下线 1:上线|
 
 ### body示例
 
 ```js
 {
-    "isOnline": 1
+    "onlineState": 1
 }
 ```
 
