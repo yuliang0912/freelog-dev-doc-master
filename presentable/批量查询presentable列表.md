@@ -1,20 +1,22 @@
-# 查询资源所被添加到的节点列表
+# 批量查询presentable列表
 
 ### 调用方式: GET
 
 ### 接口地址:
 
 ```
-https://api.freelog.com/v1/presentables/releaseSubordinateNodes?releaseId={releaseId}
+https://api.freelog.com/v1/presentables/list
 ```
 
-### url传入参数说明：
+### url传入参数说明：[releaseIds和presentableIds最少需要一个必选参数]
 
 | 参数 | 必选 | 类型及范围 | 说明 |
 | :--- | :--- | :--- | :--- |
-| releaseId | 必选 | string | 发行ID |
-| projection | 可选 | string | 需要返回的字段,多个用逗号分隔,默认全部 |
-
+|nodeId|可选|int|节点ID|
+|userId|可选|int|用户ID|
+|releaseIds|可选|string|发行ID,多个用逗号分隔|
+|presentableIds|可选|string|节点资源ID,多个用逗号分隔|
+|projection|可选|string|过滤需要返回的字段,多个用逗号分隔,默认全部|
 
 ### 返回说明：
 
@@ -41,8 +43,7 @@ https://api.freelog.com/v1/presentables/releaseSubordinateNodes?releaseId={relea
 | **version | string | 引用的版本号 |
 | createDate | date | 创建日期 |
 
-
-### 返回示例
+### 示例
 
 ```js
 {
