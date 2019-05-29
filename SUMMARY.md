@@ -39,6 +39,7 @@
     * [创建mock资源](mock-resource/创建mock资源.md)
     * [更新mock资源信息](mock-resource/更新mock资源信息.md)
     * [查看mock资源分页列表](mock-resource/查看mock资源分页列表.md)
+    * [查看bucket数量](mock-resource/查看bucket数量.md)
     * [查看mock资源详情](mock-resource/查看mock资源详情.md)
     * [删除mock资源](mock-resource/删除mock资源.md)
     * [查看mock-name是否存在](mock-resource/查看mock-name是否存在.md)
