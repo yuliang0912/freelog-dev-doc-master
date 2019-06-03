@@ -62,16 +62,15 @@ https://api.freelog.com/v1/auths/presentables/{presentableId}{.extName}
 
 | 返回值字段 | 字段类型 | 字段说明 |
 | :--- | :--- | :--- |
-| releaseId | string | 发行ID|
-| resourceId | string | 资源ID|
+| releaseId | string | 发行ID |
+| resourceId | string | 资源ID |
 | resourceType | string | 资源类型[[详见附表]][资源类型] |
 | releaseName | string | 发行名称 |
-| username	| string| 用户名|
-| policies|object[]|策略|
-| intro|string|资源简介|
-| latestVersion|object|最新版本|
-| resourceVersions|object[]|资源版本信息|
-
+| username	| string| 用户名 |
+| policies|object[]|策略 |
+| intro|string|资源简介 |
+| latestVersion|object|最新版本 |
+| resourceVersions|object[]|资源版本信息 |
 
  ### extName[auth] 返回说明 :
 
