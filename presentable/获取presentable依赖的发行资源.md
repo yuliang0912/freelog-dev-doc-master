@@ -1,4 +1,4 @@
-# 请求获取presentable资源的子级资源
+# 获取presentable依赖的发行资源
 
 ### 调用方式: GET
 
