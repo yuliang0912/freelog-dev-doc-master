@@ -5,7 +5,7 @@
 ### 接口地址:
 
 ```
-https://api.freelog.com/v1/auths/presentable/subResource/{resourceId}?token={token}
+https://api.freelog.com/v1/auths/presentables/{presentableId}/subRelease/{releaseId}{.extName}?version={version}
 
 ```
 
@@ -13,15 +13,47 @@ https://api.freelog.com/v1/auths/presentable/subResource/{resourceId}?token={tok
 
 | 参数 | 必选 | 类型及范围 | 说明 |
 | :--- | :--- | :--- | :--- |
-|resourceId|必选|string|资源ID|
-|token|必选|string|授权token,从http-header[sub-resource-auth-token]中获取|
+| presentableId | 必选 | string | presentableId |
+| releaseId | 必选 | string | 依赖的子发行ID |
+| version | 必选 | string | 依赖的子发行版本 |
+| extName | 可选 | string | file:文件流(默认) info:release信息 auth:授权结果 |
 
 
-### http-header返回说明：
+### extName[file]: http-header返回说明：
+
 | 返回值字段 | 字段类型 | 字段说明 |
 | :--- | :--- | :--- |
-| freelog-resource-type | string | 资源类型|
-| freelog-meta | json-string-base64 | 资源meta信息,经过base64编码的json字符串|
-| freelog-system-meta | json-string-base64 | 资源的系统meta,经过base64编码的json字符串 |
+| freelog-sub-resourceIds | string | presentbale的子资源(没有子资源时不存在该属性) |
+| freelog-sub-resource-auth-token | string | presentbale的子资源的授权token(没有子资源时不存在该属性) |
+| freelog-resource-type | string | 资源类型 |
+| freelog-meta | string | 资源meta信息,encodeURIComponent编码过的json字符串 |
+| freelog-system-meta | string | 资源的系统meta,encodeURIComponent编码过的json字符串 |
 
-### http-response : FileStream
+
+### extName[file] 返回说明 :
+
+    FileStream 文件流
+
+
+ ### extName[info] 返回说明 :
+
+| 返回值字段 | 字段类型 | 字段说明 |
+| :--- | :--- | :--- |
+| releaseId | string | 发行ID |
+| resourceId | string | 资源ID |
+| resourceType | string | 资源类型[[详见附表]][资源类型] |
+| releaseName | string | 发行名称 |
+| username	| string| 用户名 |
+| policies|object[]|策略 |
+| intro|string|资源简介 |
+| latestVersion|object|最新版本 |
+| resourceVersions|object[]|资源版本信息 |
+
+ ### extName[auth] 返回说明 :
+
+| 返回值字段 | 字段类型 | 字段说明 |
+| :--- | :--- | :--- |
+| isAuth | bool | 是否授权通过 |
+| authCode | int | 授权码,参考附表 |
+| data | object | 附属信息 |
+| errors | string[] | 授权相关错误信息 |
