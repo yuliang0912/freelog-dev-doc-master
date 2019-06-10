@@ -42,6 +42,7 @@
     * [查看mock资源分页列表](mock-resource/查看mock资源分页列表.md)
     * [查看bucket数量](mock-resource/查看bucket数量.md)
     * [查看mock资源详情](mock-resource/查看mock资源详情.md)
+    * [mock转换为资源](mock-resource/mock转换为资源.md)
     * [删除mock资源](mock-resource/删除mock资源.md)
     * [查看mock-name是否存在](mock-resource/查看mock-name是否存在.md)
     * [创建bucket](mock-resource/创建bucket.md)
