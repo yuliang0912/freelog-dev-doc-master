@@ -91,6 +91,7 @@
     * [获取授权链基础信息](presentable/获取presentable授权链基础信息.md)
     * [获取策略身份认证结果](presentable/获取presentable策略身份认证结果.md)
     * [获取供应侧合约授权结果](presentable/获取供应侧合约授权结果.md)
+    * [获取供应侧合约授权概况图](presentable/获取供应侧合约授权概况图.md)
 * [支付](pay/README.md)
     * [创建个人支付账户](pay/创建支付账户.md)
     * [创建节点支付账户](pay/创建节点支付账户.md)
