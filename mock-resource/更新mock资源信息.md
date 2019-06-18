@@ -22,11 +22,11 @@ https://api.freelog.com/v1/resources/mocks/{mockResourceId}
 |description|可选|string|资源描述|
 |resourceType | 可选| string | 资源类型 |
 |dependencyInfo | 可选| object | 依赖的发行 |
-|mocks | 可选| object[] | 依赖的mock资源列表 |
-|**mockResourceId | 必选| string | 依赖的mock资源ID |
-|releases | 可选| object[] | 依赖的发行列表 |
-|**releaseId | 必选| string | 依赖的发行ID |
-|**versionRange | 必选| string | 依赖的发行semver范围 |
+|**mocks | 可选| object[] | 依赖的mock资源列表 |
+|****mockResourceId | 必选| string | 依赖的mock资源ID |
+|**releases | 可选| object[] | 依赖的发行列表 |
+|****releaseId | 必选| string | 依赖的发行ID |
+|****versionRange | 必选| string | 依赖的发行semver范围 |
 |uploadFileId|可选|string|上传的资源返回来的uploadFileId值|
 |previewImages | 可选| string[] | 预览图URL地址,目前仅支持一个 |
 
