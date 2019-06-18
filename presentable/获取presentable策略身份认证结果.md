@@ -5,7 +5,7 @@
 ### 接口地址:
 
 ```
-https://api.freelog.com/v1/auths/presentables/batchPolicyIdentityAuthentication
+https://api.freelog.com/v1/auths/presentables/batchPolicyIdentityAuthentication?presentableIds={presentableIds}
 ```
 
 ### 传入参数说明：

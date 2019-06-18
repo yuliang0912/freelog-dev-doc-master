@@ -18,7 +18,10 @@ https://api.freelog.com/v1/resources/mocks
 |bucketName|必选|json|bucket名称|
 |description|可选|string|资源描述|
 |previewImages | 可选| string[] | 预览图URL地址,目前仅支持一个 |
-|dependencies | 可选| object[] | 依赖的发行 |
+|dependencyInfo | 可选| object | 依赖的发行 |
+|mocks | 可选| object[] | 依赖的mock资源列表 |
+|**mockResourceId | 必选| string | 依赖的mock资源ID |
+|releases | 可选| object[] | 依赖的发行列表 |
 |**releaseId | 必选| string | 依赖的发行ID |
 |**versionRange | 必选| string | 依赖的发行semver范围 |
 
@@ -29,7 +32,16 @@ https://api.freelog.com/v1/resources/mocks
 	"name": "my-first-mock-resource-1",
     "bucketName":"yuliang",
     "meta":{},
-    "uploadFileId":"5cbfc79dae8edb53bc8de2ff"
+    "uploadFileId":"5cbfc79dae8edb53bc8de2ff",
+    "dependencyInfo": {
+    	"mocks": [{
+    		"mockResourceId": "5ce2752c2670523708c7eae4"
+    	}],
+    	"releases": [{
+    		"releaseId": "5cb039815a791845b4aed4ab",
+    		"versionRange": "0.1.0"
+    	}]
+    }
 }
 ```
 
@@ -55,11 +67,11 @@ https://api.freelog.com/v1/resources/mocks
     "errcode": 0,
     "msg": "success",
     "data": {
-        "mockResourceId": "5ce26c5356c28e5be8b51e5e",
-        "fullName": "yuliang/markdown-file-1",
+        "mockResourceId": "5d0756cab3173652a0420dd1",
+        "fullName": "yuliang/readme111",
         "previewImages": [],
         "status": 0,
-        "name": "markdown-file-1",
+        "name": "readme111",
         "sha1": "81024b25db669618cb79823df0f9005776d6141a",
         "userId": 10026,
         "resourceType": "markdown",
@@ -67,13 +79,28 @@ https://api.freelog.com/v1/resources/mocks
             "sha1": "81024b25db669618cb79823df0f9005776d6141a",
             "fileSize": 394,
             "mimeType": "text/plain",
-            "dependencies": []
+            "dependencyInfo": {
+                "mocks": [
+                    {
+                        "mockResourceId": "5ce2752c2670523708c7eae4",
+                        "mockResourceName": "yuliang/markdown-file-1"
+                    }
+                ],
+                "releases": [
+                    {
+                        "releaseId": "5cb039815a791845b4aed4ab",
+                        "versionRange": "0.1.0",
+                        "releaseName": "b1"
+                    }
+                ]
+            },
+            "filename": "MIT.txt"
         },
         "bucketId": "5c8b115192abd02280a188f3",
         "bucketName": "yuliang",
         "description": "",
-        "createDate": "2019-05-20T08:58:59.390Z",
-        "updateDate": "2019-05-20T08:58:59.390Z",
+        "createDate": "2019-06-17T09:00:58.650Z",
+        "updateDate": "2019-06-18T02:47:05.838Z",
         "meta": {}
     }
 }

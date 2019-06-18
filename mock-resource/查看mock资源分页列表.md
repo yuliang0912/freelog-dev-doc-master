@@ -57,7 +57,21 @@ https://api.freelog.com/v1/resources/mocks?page={page}&pageSize={pageSize}&keywo
 				"sha1": "81024b25db669618cb79823df0f9005776d6141a",
 				"fileSize": 394,
 				"mimeType": "text/plain",
-				"dependencies": []
+				"dependencyInfo": {
+                     "mocks": [
+                         {
+                             "mockResourceId": "5ce2752c2670523708c7eae4",
+                             "mockResourceName": "yuliang/markdown-file-1"
+                         }
+                     ],
+                     "releases": [
+                         {
+                             "releaseId": "5cb039815a791845b4aed4ab",
+                             "versionRange": "0.1.0",
+                             "releaseName": "b1"
+                         }
+                     ]
+                 }
 			},
 			"bucketId": "5c8b115192abd02280a188f3",
 			"bucketName": "yuliang",

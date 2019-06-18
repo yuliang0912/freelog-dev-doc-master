@@ -15,16 +15,37 @@ https://api.freelog.com/v1/resources/mocks/{mockResourceId}
 
 
 ### body传入参数说明:
+
 | 参数 | 必选 | 类型及范围 | 说明 |
 | :--- | :--- | :--- | :--- |
 |meta|可选|json|自定义的资源meta信息|
 |description|可选|string|资源描述|
 |resourceType | 可选| string | 资源类型 |
-|dependencies | 可选| object[] | 依赖的发行 |
+|dependencyInfo | 可选| object | 依赖的发行 |
+|mocks | 可选| object[] | 依赖的mock资源列表 |
+|**mockResourceId | 必选| string | 依赖的mock资源ID |
+|releases | 可选| object[] | 依赖的发行列表 |
 |**releaseId | 必选| string | 依赖的发行ID |
 |**versionRange | 必选| string | 依赖的发行semver范围 |
 |uploadFileId|可选|string|上传的资源返回来的uploadFileId值|
 |previewImages | 可选| string[] | 预览图URL地址,目前仅支持一个 |
+
+
+### body示例
+
+```js
+{
+	"dependencyInfo": {
+		"mocks": [{
+			"mockResourceId": "5ce2752c2670523708c7eae4"
+		}],
+		"releases": [{
+			"releaseId": "5cb039815a791845b4aed4ab",
+			"versionRange": "0.1.0"
+		}]
+	}
+}
+```
 
 ### 返回说明：
 
@@ -47,31 +68,40 @@ https://api.freelog.com/v1/resources/mocks/{mockResourceId}
     "errcode": 0,
     "msg": "success",
     "data": {
-        "previewImages": [
-            "https://image.freelog.com/preview/b042cd88-cc9a-43fb-b8fb-1cae320b7977.jpg"
-        ],
-        "customMimeType": "",
+        "mockResourceId": "5d0756cab3173652a0420dd1",
+        "fullName": "yuliang/readme111",
+        "previewImages": [],
         "status": 0,
-        "resourceId": "71fd7e3de0e9fe3d4f9c83e91d40a9f7cd2c8a39",
-        "aliasName": "新新新资源",
+        "name": "readme111",
+        "sha1": "81024b25db669618cb79823df0f9005776d6141a",
         "userId": 10026,
         "resourceType": "markdown",
         "systemMeta": {
-            "dependencies": [
-                {
-                    "releaseId": "5cbd33192f4de92fb419b53c",
-                    "versionRange": "^0.1.0",
-                    "releaseName": "a-a-a-13"
-                }
-            ],
-            "sha1": "71fd7e3de0e9fe3d4f9c83e91d40a9f7cd2c8a39",
-            "fileSize": 7206,
-            "mimeType": "text/markdown"
+            "sha1": "81024b25db669618cb79823df0f9005776d6141a",
+            "fileSize": 394,
+            "mimeType": "text/plain",
+            "dependencyInfo": {
+                "mocks": [
+                    {
+                        "mockResourceId": "5ce2752c2670523708c7eae4",
+                        "mockResourceName": "yuliang/markdown-file-1"
+                    }
+                ],
+                "releases": [
+                    {
+                        "releaseId": "5cb039815a791845b4aed4ab",
+                        "versionRange": "0.1.0",
+                        "releaseName": "b1"
+                    }
+                ]
+            },
+            "filename": "MIT.txt"
         },
-        "description": "<p>文件描述</p>",
-        "intro": "文件描述",
-        "createDate": "2019-04-24T02:20:35.852Z",
-        "updateDate": "2019-04-24T02:20:35.852Z",
+        "bucketId": "5c8b115192abd02280a188f3",
+        "bucketName": "yuliang",
+        "description": "",
+        "createDate": "2019-06-17T09:00:58.650Z",
+        "updateDate": "2019-06-18T02:47:05.838Z",
         "meta": {}
     }
 }
