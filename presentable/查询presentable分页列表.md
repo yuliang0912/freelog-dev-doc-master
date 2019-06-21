@@ -22,6 +22,8 @@ https://api.freelog.com/v1/presentables?nodeId={nodeId}
 |tags|可选|string|用户创建presentable时设置的自定义标签,多个用","分割|
 |projection|可选|string|指定返回的字段,多个用逗号分隔|
 |keywords|可选|string[1,100]|搜索关键字,目前支持模糊搜索节点资源名称和资源名称|
+|isLoadingResourceInfo|可选|int|是否加载资源信息,1:是 0:否(默认) |
+
 
 ### 返回说明：
 

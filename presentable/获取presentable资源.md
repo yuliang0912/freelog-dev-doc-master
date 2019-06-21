@@ -17,21 +17,19 @@ https://api.freelog.com/v1/auths/presentables/{presentableId}{.extName}
 | extName | 可选 | string | file:文件流(默认) info:presentable信息 release:presentable对应的发行 auth:授权结果 |
 
 
-### extName[file]: http-header返回说明：
+### extName[file]
+
+ 1.http-header返回说明：
 
 | 返回值字段 | 字段类型 | 字段说明 |
 | :--- | :--- | :--- |
-| freelog-sub-resourceIds | string | presentbale的子资源(没有子资源时不存在该属性) |
-| freelog-sub-resource-auth-token | string | presentbale的子资源的授权token(没有子资源时不存在该属性) |
+| freelog-sub-releases | string | 当前发行的子依赖 releaseId-version格式,多个用逗号分隔 |
 | freelog-resource-type | string | 资源类型 |
 | freelog-meta | string | 资源meta信息,encodeURIComponent编码过的json字符串 |
 | freelog-system-meta | string | 资源的系统meta,encodeURIComponent编码过的json字符串 |
 
-
-### extName[file] 返回说明 :
-
-    FileStream 文件流
-
+ 2.response:
+    fileStream 文件流
 
 ### extName[info] 返回说明 :
 

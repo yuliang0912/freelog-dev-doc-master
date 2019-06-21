@@ -12,8 +12,8 @@ https://api.freelog.com/v1/presentables/{presentableId}
 
 | 参数 | 必选 | 类型及范围 | 说明 |
 | :--- | :--- | :--- | :--- |
-|presentableId|必选|string|展示策略ID
-
+|presentableId|必选|string|展示策略ID|
+|isLoadingResourceInfo|可选|int|是否加载资源信息,1:是 0:否(默认) |
 
 ### 返回说明：
 
