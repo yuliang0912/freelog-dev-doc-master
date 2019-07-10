@@ -18,6 +18,7 @@ https://api.freelog.com/v1/presentables?nodeId={nodeId}
 |page|可选|int|页码(默认为1)|
 |pageSize|可选|int|每页数量 (默认为10)|
 |resourceType|可选|string|资源类型|
+|omitResourceType|可选|string|忽略的资源类型,与resourceType参数互斥|
 |isOnline|可选|int|是否上线(0:下线 1:上线 2:全部) 默认上线|
 |tags|可选|string|用户创建presentable时设置的自定义标签,多个用","分割|
 |projection|可选|string|指定返回的字段,多个用逗号分隔|
