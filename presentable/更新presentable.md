@@ -31,7 +31,7 @@ https://api.freelog.com/v1/presentables/{presentableId}
 | ****policyName | 必选 | string |  策略名称  |
 | ****status | 必选 | int |  策略状态 (0:不显示 1:显示)  |
 | intro | 可选 | string | presentable简介 |
-| resolveReleases | 必选 | object[] | 发行以及其上抛的解决方式 |
+| resolveReleases | 可选 | object[] | 发行以及其上抛的解决方式 |
 | **releaseId | 必选 | string | 解决的发行ID |
 | **contracts | 必选 | object[] | 解决的发行的策略 |
 | ****policyId | 必选 | string | 选中的策略 |
