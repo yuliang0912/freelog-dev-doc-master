@@ -94,6 +94,7 @@
     * [获取供应侧合约授权结果](presentable/获取供应侧合约授权结果.md)
     * [获取供应侧合约授权概况图](presentable/获取供应侧合约授权概况图.md)
     * [获取presentable的实际依赖](presentable/获取presentable的实际依赖.md)
+    * [切换presentable版本](presentable/切换presentable版本.md)
 * [支付](pay/README.md)
     * [创建个人支付账户](pay/创建支付账户.md)
     * [创建节点支付账户](pay/创建节点支付账户.md)
