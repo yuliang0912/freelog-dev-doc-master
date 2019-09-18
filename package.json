@@ -5,7 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "gitbook-plugin-theme-mobdoc": "^7.1.0",
-    "gitbook-plugin-toggle-chapters": "0.0.3"
+    "gitbook-plugin-toggle-chapters": "0.0.3",
+    "uid": "0.0.2"
   },
   "devDependencies": {},
   "scripts": {
