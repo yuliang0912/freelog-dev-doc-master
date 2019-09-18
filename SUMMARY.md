@@ -84,7 +84,7 @@
     * [保存节点的测试规则](test-node/保存节点的测试规则.md)
     * [查看节点当前测试规则](test-node/查看节点当前测试规则.md)
     * [根据测试规则匹配测试结果](test-node/根据测试规则匹配测试结果.md)
-    * [分页获取测试规则匹配的结果](test-node/分页获取测试规则匹配的结果.md)
+    * [分页获取规则匹配的结果](test-node/分页获取规则匹配的结果.md)
     * [根据依赖项搜索测试资源](test-node/根据依赖项搜索测试资源.md)
     * [查看测试资源的依赖树](test-node/查看测试资源的依赖树.md)
 * [presentable](presentable/README.md)
