@@ -88,6 +88,7 @@
     * [分页获取规则匹配的结果](test-node/分页获取规则匹配的结果.md)
     * [根据依赖项搜索测试资源](test-node/根据依赖项搜索测试资源.md)
     * [查看测试资源的依赖树](test-node/查看测试资源的依赖树.md)
+    * [搜索测试资源的依赖树](test-node/搜索测试资源的依赖树.md)
 * [presentable](presentable/README.md)
     * [创建presentable](presentable/创建presentable.md)
     * [更新presentable](presentable/更新presentable.md)
