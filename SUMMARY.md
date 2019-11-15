@@ -94,6 +94,7 @@
     * [更新测试资源的授权合约](test-node/更新测试资源的授权合约.md)
     * [获取测试资源源文件](test-node/获取测试资源源文件.md)
     * [获取测试资源的依赖源文件](test-node/获取测试资源的依赖源文件.md)
+    * [根据发行名获取测试资源源文件](test-node/根据发行名获取测试资源源文件.md)
 * [presentable](presentable/README.md)
     * [创建presentable](presentable/创建presentable.md)
     * [更新presentable](presentable/更新presentable.md)
