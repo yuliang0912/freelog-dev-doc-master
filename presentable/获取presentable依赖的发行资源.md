@@ -5,7 +5,7 @@
 ### 接口地址:
 
 ```
-https://api.freelog.com/v1/auths/presentables/{presentableId}/subRelease/{releaseId}{.extName}?version={version}
+https://api.freelog.com/v1/auths/presentables/{presentableId}/subDepend{.extName}?entityNid={entityNid}&subReleaseId={subReleaseId}&subReleaseName={subReleaseName}
 
 ```
 
@@ -14,8 +14,9 @@ https://api.freelog.com/v1/auths/presentables/{presentableId}/subRelease/{releas
 | 参数 | 必选 | 类型及范围 | 说明 |
 | :--- | :--- | :--- | :--- |
 | presentableId | 必选 | string | presentableId |
-| releaseId | 必选 | string | 依赖的子发行ID |
-| version | 必选 | string | 依赖的子发行版本 |
+| entityNid | 必选 | string | 当前子资源的父级资源的依赖树链路ID |
+| releaseId | 可选 | string | 依赖的子发行ID |
+| releaseName | 可选 | string | 依赖的子发行名称 |
 | extName | 可选 | string | file:文件流(默认) info:release信息 auth:授权结果 |
 
 
@@ -25,7 +26,8 @@ https://api.freelog.com/v1/auths/presentables/{presentableId}/subRelease/{releas
 
 | 返回值字段 | 字段类型 | 字段说明 |
 | :--- | :--- | :--- |
-| freelog-sub-releases | string | 当前发行的子依赖 releaseId-version格式,多个用逗号分隔 |
+| freelog-entity-nid | string | 当前响应的测试资源的依赖树链路ID |
+| freelog-sub-dependencies | string | 当前测试资源子依赖,base64编码的json字符串 |
 | freelog-resource-type | string | 资源类型 |
 | freelog-meta | string | 资源meta信息,encodeURIComponent编码过的json字符串 |
 | freelog-system-meta | string | 资源的系统meta,encodeURIComponent编码过的json字符串 |

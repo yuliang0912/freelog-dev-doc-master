@@ -23,7 +23,8 @@ https://api.freelog.com/v1/auths/presentables/{presentableId}{.extName}
 
 | 返回值字段 | 字段类型 | 字段说明 |
 | :--- | :--- | :--- |
-| freelog-sub-releases | string | 当前发行的子依赖 releaseId-version格式,多个用逗号分隔 |
+| freelog-entity-nid | string | 当前响应的展品的依赖树链路ID |
+| freelog-sub-dependencies | string | 当前展品的子依赖,base64编码的json字符串 |
 | freelog-resource-type | string | 资源类型 |
 | freelog-meta | string | 资源meta信息,encodeURIComponent编码过的json字符串 |
 | freelog-system-meta | string | 资源的系统meta,encodeURIComponent编码过的json字符串 |
