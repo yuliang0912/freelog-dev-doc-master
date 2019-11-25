@@ -103,6 +103,7 @@
     * [查询presentable分页列表](presentable/查询presentable分页列表.md)
     * [批量查询presentable列表](presentable/批量查询presentable列表.md)
     * [获取presentable资源](presentable/获取presentable资源.md)
+    * [根据发行获取presentable资源](presentable/根据发行获取presentable资源.md)
     * [获取presentable子资源](presentable/获取presentable依赖的发行资源.md)
     * [获取授权链基础信息](presentable/获取presentable授权链基础信息.md)
     * [获取策略身份认证结果](presentable/获取presentable策略身份认证结果.md)
