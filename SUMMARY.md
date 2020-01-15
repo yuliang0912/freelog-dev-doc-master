@@ -2,7 +2,7 @@
 
 * [简介](README.md)
 * [用户](user/README.md)
-    * [用户登陆](user/用户登陆.md)
+    * [用户登录](user/用户登录.md)
     * [用户登出](user/用户登出.md)
     * [获取用户信息](user/获取用户信息.md)
     * [搜索用户信息](user/搜索用户信息.md)
