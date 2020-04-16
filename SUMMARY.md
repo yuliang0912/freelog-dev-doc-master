@@ -163,6 +163,8 @@
     * [查看内测邀请码详情](beta-test/查看内测邀请码详情.md)
     * [统计内测邀请码使用数据](beta-test/统计内测邀请码使用数据.md)
     * [批量设置分发状态](beta-test/批量设置分发状态.md)
+* [网关插件](附表/README.md)
+    * [获取http请求记录分页列表](gateway/获取http请求记录分页列表.md)
 * [业务逻辑说明](附表/README.md)
     * [presentable授权说明](业务逻辑说明/presentable授权说明.md)
 * [附表](附表/README.md)
