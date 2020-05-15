@@ -46,7 +46,7 @@
     * [查询bucket是否存在](storage/查询bucket是否存在.md)
     * [查询bucket详情](storage/查询bucket详情.md)
     * [分页查看存储对象列表](storage/分页查看存储对象列表.md)
-    * [创建存储对象](storage/创建存储对象(上传文件))
+    * [创建存储对象](storage/创建存储对象)
     * [创建用户节点数据对象](storage/创建用户节点数据对象.md)
     * [编辑用户节点数据对象](storage/编辑用户节点数据对象.md)
     * [下载用户节点数据](storage/下载用户节点数据.md)
