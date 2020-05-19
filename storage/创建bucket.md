@@ -12,7 +12,7 @@ https://api.freelog.com/v1/storages/buckets
 
 | 参数 | 必选 | 类型及范围 | 说明 |
 | :--- | :--- | :--- | :--- |
-|bucketName|必选|string|bucket名称,1-63个字符之间,数字小写字母和-组成,连接符不能位于头尾|
+| bucketName | 必选 | string |bucket名称,严格模式|
 
 
 ### body示例
