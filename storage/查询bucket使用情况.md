@@ -13,8 +13,9 @@ https://api.freelog.com/v1/storages/buckets/spaceStatistics
 
 | 返回值字段 | 字段类型 | 字段说明 |
 | :--- | :--- | :--- |
-| bucketCount | string | 已创建的bucket数量 |
-| totalFileSize | string | 总的object文件大小 |
+| storageLimit | int | 总的存储空间大小 |
+| bucketCount | int | 已创建的bucket数量 |
+| totalFileSize | int | 已使用的存储空间大小 |
 
 ### 示例
 
@@ -24,6 +25,7 @@ https://api.freelog.com/v1/storages/buckets/spaceStatistics
 	"errcode": 0,
 	"msg": "success",
 	"data": {
+	    "storageLimit": 5368709120,
 		"bucketCount": 2,
 		"totalFileSize": 505421
 	}
