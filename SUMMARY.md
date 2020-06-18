@@ -55,6 +55,7 @@
     * [删除存储对象](storage/删除存储对象.md)
     * [下载存储对象文件](storage/下载存储对象文件.md)
     * [根据sha1查询文件是否存在](storage/根据sha1查询文件是否存在.md)
+    * [上传资源文件](storage/上传资源文件.md)
 * [mock资源](mock-resource/README.md)
     * [创建mock资源](mock-resource/创建mock资源.md)
     * [更新mock资源信息](mock-resource/更新mock资源信息.md)
