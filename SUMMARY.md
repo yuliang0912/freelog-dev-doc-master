@@ -30,6 +30,7 @@
     * [下载存储对象文件](storage/下载存储对象文件.md)
     * [根据sha1查询文件是否存在](storage/根据sha1查询文件是否存在.md)
     * [上传资源文件](storage/上传资源文件.md)
+    * [上传图片文件](storage/上传图片文件.md)
 * [资源(新版)](resourceV2/README.md)
     * [创建资源](resourceV2/创建资源.md)
     * [更新资源信息](resourceV2/更新资源信息.md)
