@@ -46,6 +46,8 @@
     * [批量查询资源版本列表](resourceV2/批量查询资源版本列表.md)
     * [根据sha1查询版本列表](resourceV2/根据sha1查询版本列表.md)
     * [更新资源版本信息](resourceV2/更新资源版本信息.md)
+    * [保存资源版本草稿](resourceV2/保存资源版本草稿.md)
+    * [查看资源版本草稿](resourceV2/查看资源版本草稿.md)
 * [收藏资源](resource-collection/README.md)
     * [收藏资源](resource-collection/收藏资源.md)
     * [查看收藏的资源列表](resource-collection/查看收藏的资源列表.md)
