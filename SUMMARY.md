@@ -48,6 +48,7 @@
     * [更新资源版本信息](resourceV2/更新资源版本信息.md)
     * [保存资源版本草稿](resourceV2/保存资源版本草稿.md)
     * [查看资源版本草稿](resourceV2/查看资源版本草稿.md)
+    * [校验文件是否可以被创建成资源](resourceV2/校验文件是否可以被创建成资源.md)
 * [收藏资源](resource-collection/README.md)
     * [收藏资源](resource-collection/收藏资源.md)
     * [查看收藏的资源列表](resource-collection/查看收藏的资源列表.md)
