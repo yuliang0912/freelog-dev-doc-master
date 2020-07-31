@@ -1,4 +1,4 @@
-FROM node:14.6.0-alpine
+FROM node:10.5.0
 
 MAINTAINER yuliang <yu.liang@freelog.com>
 
