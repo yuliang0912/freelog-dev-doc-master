@@ -4,7 +4,7 @@
   "description": "## 约定",
   "main": "index.js",
   "dependencies": {
-    "gitbook-plugin-theme-mobdoc": "^7.1.0",
+    "gitbook-plugin-theme-mobdoc": "^7.2.20",
     "gitbook-plugin-toggle-chapters": "0.0.3",
     "uid": "0.0.2"
   },
