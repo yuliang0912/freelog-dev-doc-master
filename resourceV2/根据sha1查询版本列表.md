@@ -9,7 +9,6 @@ https://api.freelog.com/v2/resources/files/:fileSha1/versions
 ```
 
 ### url传入参数说明
-
 | 参数 | 必选 | 类型及范围 | 说明 |
 | :--- | :--- | :--- | :--- |
 | fileSha1 | 必选 | string | 文件sha1值 |
