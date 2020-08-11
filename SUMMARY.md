@@ -50,6 +50,8 @@
     * [查看资源版本草稿](resourceV2/查看资源版本草稿.md)
     * [校验文件是否可以被创建成资源](resourceV2/校验文件是否可以被创建成资源.md)
     * [下载资源文件](resourceV2/下载资源文件.md)
+    * [查看指定合同覆盖的版本集](resourceV2/查看指定合同覆盖的版本集.md)
+    * [批量查看合同覆盖的版本集](resourceV2/批量查看合同覆盖的版本集.md)
 * [收藏资源v2](collectionV2/README.md)
     * [收藏资源](collectionV2/收藏资源.md)
     * [查看收藏的资源列表](collectionV2/查看收藏的资源列表.md)
