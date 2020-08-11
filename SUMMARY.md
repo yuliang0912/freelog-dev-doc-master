@@ -70,7 +70,6 @@
     * [查看合同详情](contractV2/查看合同详情.md)
     * [查看合同分页列表](contractV2/查看合同分页列表.md)
     * [批量查询合同列表](contractV2/批量查询合同列表.md)
-    * [查看历史合同列表](contractV2/查看历史合同列表.md)
 * [节点v2](nodeV2/README.md)
     * [创建节点](nodeV2/创建节点.md)
     * [查看节点详情](nodeV2/查看节点详情.md)
