@@ -53,6 +53,7 @@
     * [查看指定合同覆盖的版本集](resourceV2/查看指定合同覆盖的版本集.md)
     * [批量查看合同覆盖的版本集](resourceV2/批量查看合同覆盖的版本集.md)
     * [查询资源所解决的依赖集](resourceV2/查询资源所解决的依赖集.md)
+    * [批量设置策略应用的版本](resourceV2/批量设置策略应用的版本.md)
 * [收藏资源v2](collectionV2/README.md)
     * [收藏资源](collectionV2/收藏资源.md)
     * [查看收藏的资源列表](collectionV2/查看收藏的资源列表.md)
