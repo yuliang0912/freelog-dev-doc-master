@@ -57,6 +57,8 @@
     * [查询资源所解决的依赖集](resourceV2/查询资源所解决的依赖集.md)
     * [批量设置策略应用的版本](resourceV2/批量设置策略应用的版本.md)
     * [资源依赖循环性检查](resourceV2/资源依赖循环性检查.md)
+    * [查看资源关系树](resourceV2/查看资源关系树.md)
+    * [查看含授权的资源关系树](resourceV2/查看含授权的资源关系树.md)
 * [收藏资源v2](collectionV2/README.md)
     * [收藏资源](collectionV2/收藏资源.md)
     * [查看收藏的资源列表](collectionV2/查看收藏的资源列表.md)
