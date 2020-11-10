@@ -92,6 +92,7 @@
     * [查看展品授权树](presentableV2/查看展品授权树.md)
     * [切换展品版本](presentableV2/切换展品版本.md)
     * [设置展品自定义属性](presentableV2/设置展品自定义属性.md)
+    * [获取展品授权信息](presentableV2/获取展品授权信息.md)
 * [合同事件执行](contract-event/README.md)
     * [签约协议](contract-event/签约协议.md)
     * [付款](contract-event/付款.md)
