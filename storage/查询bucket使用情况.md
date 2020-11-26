@@ -19,7 +19,7 @@ https://api.freelog.com/v1/storages/buckets/spaceStatistics
 
 ### 示例
 
-```js
+```json
 {
 	"ret": 0,
 	"errcode": 0,

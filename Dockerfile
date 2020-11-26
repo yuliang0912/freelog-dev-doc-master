@@ -10,8 +10,8 @@ RUN mkdir /gitbook
 WORKDIR /gitbook
 COPY . /gitbook
 
-RUN npm install --global gitbook-cli &&\
-	gitbook fetch 3.2.0 &&\
+RUN npm install -g gitbook-cli &&\
+	gitbook fetch 3.2.3 &&\
 	gitbook install --save
 
 EXPOSE 4000 35729

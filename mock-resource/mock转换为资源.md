@@ -22,7 +22,7 @@ https://api.freelog.com/v1/resources/mocks/{mockResourceId}/convert
 
 ### body示例
 
-```js
+```json
 {
 	"resourceAliasName": "资源别名"
 }
@@ -44,7 +44,7 @@ https://api.freelog.com/v1/resources/mocks/{mockResourceId}/convert
 
 ### 示例
 
-```js
+```json
 {
     "ret": 0,
     "errcode": 0,

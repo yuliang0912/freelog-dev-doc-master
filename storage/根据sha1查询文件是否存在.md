@@ -25,7 +25,7 @@ https://api.freelog.com/v1/storages/files/fileIsExist?sha1={sha1}
 
 ### 示例
 
-```js
+```json
 {
 	"ret": 0,
 	"errcode": 0,

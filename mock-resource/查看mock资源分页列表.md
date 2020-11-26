@@ -35,7 +35,7 @@ https://api.freelog.com/v1/resources/mocks?page={page}&pageSize={pageSize}&keywo
 
 ### 示例
 
-```js
+```json
 {
 	"ret": 0,
 	"errcode": 0,

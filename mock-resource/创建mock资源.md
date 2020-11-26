@@ -27,7 +27,7 @@ https://api.freelog.com/v1/resources/mocks
 
 ### body示例
 
-```js
+```json
 {
 	"name": "my-first-mock-resource-1",
     "bucketName":"yuliang",
@@ -61,7 +61,7 @@ https://api.freelog.com/v1/resources/mocks
 
 ### 示例
 
-```js
+```json
 {
     "ret": 0,
     "errcode": 0,

@@ -49,7 +49,7 @@ https://api.freelog.com/v2/resources/files/:fileSha1/versions
 
 ### 示例
 
-```js
+```json
 {
     "ret":0,
     "errcode":0,

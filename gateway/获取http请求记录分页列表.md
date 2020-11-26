@@ -39,7 +39,7 @@ https://api.freelog.com/gateway/trafficStatistics/requestRecords
 
 ### 示例
 
-```js
+```json
 {
 	"ret": 0,
 	"errcode": 0,

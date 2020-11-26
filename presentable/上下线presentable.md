@@ -23,7 +23,7 @@ https://api.freelog.com/v1/presentables/{presentableId}/switchOnlineState
 
 ### body示例
 
-```js
+```json
 {
     "onlineState": 1
 }
@@ -38,7 +38,7 @@ https://api.freelog.com/v1/presentables/{presentableId}/switchOnlineState
 
 ### 返回示例
 
-```js
+```json
 {
     "ret": 0,
     "errcode": 0,

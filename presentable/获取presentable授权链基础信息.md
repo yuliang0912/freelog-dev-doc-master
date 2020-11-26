@@ -42,7 +42,7 @@ https://api.freelog.com/v1/presentables/{presentableId}/authChainInfo
 
 ### 返回示例
 
-```js
+```json
 {
 	"ret": 0,
 	"errcode": 0,

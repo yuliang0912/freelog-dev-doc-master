@@ -24,7 +24,7 @@ https://api.freelog.com/v1/resources/mocks/buckets/isExist?bucketName={bucketNam
 
 ### 示例
 
-```js
+```json
 {
     "ret": 0,
     "errcode": 0,

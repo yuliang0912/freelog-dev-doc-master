@@ -28,7 +28,7 @@ https://api.freelog.com/v1/presentables/
 
 ### body示例
 
-```js
+```json
 {
     "nodeId":80000003,
 	"releaseId":"5cb039815a791845b4aed4ab",
@@ -74,7 +74,7 @@ https://api.freelog.com/v1/presentables/
 
 ### 返回示例
 
-```js
+```json
 {
 	"ret": 0,
 	"errcode": 0,

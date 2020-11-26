@@ -26,7 +26,7 @@ https://api.freelog.com/v1/auths/presentables/batchPolicyIdentityAuthentication?
 
 ### 示例
 
-```js
+```json
 {
 	"ret": 0,
 	"errcode": 0,

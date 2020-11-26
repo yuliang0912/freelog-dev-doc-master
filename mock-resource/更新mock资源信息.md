@@ -33,7 +33,7 @@ https://api.freelog.com/v1/resources/mocks/{mockResourceId}
 
 ### body示例
 
-```js
+```json
 {
 	"dependencyInfo": {
 		"mocks": [{
@@ -62,7 +62,7 @@ https://api.freelog.com/v1/resources/mocks/{mockResourceId}
 
 ### 示例
 
-```js
+```json
 {
     "ret": 0,
     "errcode": 0,

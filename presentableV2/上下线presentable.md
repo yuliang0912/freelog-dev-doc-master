@@ -23,7 +23,7 @@ https://api.freelog.com/v2/presentables/{presentableId}/onlineStatus
 
 ### body示例
 
-```js
+```json
 {
 	"onlineStatus": 1
 }
@@ -38,7 +38,7 @@ https://api.freelog.com/v2/presentables/{presentableId}/onlineStatus
 
 ### 返回示例
 
-```js
+```json
 {
     "ret": 0,
     "errcode": 0,

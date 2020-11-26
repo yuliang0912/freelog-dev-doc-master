@@ -19,7 +19,7 @@ https://api.freelog.com/v1/pay/helper/feather/clearKeyStore
 |  [data] | bool | 是否成功
 
 ### 返回示例
-```js
+```json
 {
     "ret": 0,
     "errcode": 0,

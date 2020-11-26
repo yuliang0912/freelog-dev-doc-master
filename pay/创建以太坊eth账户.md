@@ -17,7 +17,7 @@ https://api.freelog.com/v1/pay/helper/feather/createEthAccount
 
 ### body示例
 
-```js
+```json
 {
     "password": "123456"
 }
@@ -33,7 +33,7 @@ https://api.freelog.com/v1/pay/helper/feather/createEthAccount
 
 ### 返回示例
 
-```js
+```json
 {
     "ret": 0,
     "errcode": 0,

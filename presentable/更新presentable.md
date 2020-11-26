@@ -38,7 +38,7 @@ https://api.freelog.com/v1/presentables/{presentableId}
 
 ### body示例
 
-```js
+```json
 {
 	"presentableName": "update presentable",
 	"userDefinedTags": ["tagA", "tagB", "tagC"],
@@ -80,7 +80,7 @@ https://api.freelog.com/v1/presentables/{presentableId}
 
 ### 返回示例
 
-```js
+```json
 {
 	"ret": 0,
 	"errcode": 0,

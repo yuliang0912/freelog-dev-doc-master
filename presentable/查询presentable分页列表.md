@@ -53,7 +53,7 @@ https://api.freelog.com/v1/presentables?nodeId={nodeId}
 
 ### 示例
 
-```js
+```json
 {
 	"ret": 0,
 	"errcode": 0,

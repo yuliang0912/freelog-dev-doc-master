@@ -23,7 +23,7 @@ https://api.freelog.com/v1/presentables/{presentableId}/switchPresentableVersion
 
 ### body示例
 
-```js
+```json
 {
     "version": "0.2.0"
 }
@@ -38,7 +38,7 @@ https://api.freelog.com/v1/presentables/{presentableId}/switchPresentableVersion
 
 ### 返回示例
 
-```js
+```json
 {
     "ret": 0,
     "errcode": 0,
