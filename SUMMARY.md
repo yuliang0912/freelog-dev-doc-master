@@ -25,6 +25,8 @@
     * [批量修改邀请码](betaTestV2/批量修改邀请码.md)
     * [分页查看邀请码列表](betaTestV2/分页查看邀请码列表.md)
     * [查看邀请码详情](betaTestV2/查看邀请码详情.md)
+    * [使用邀请码激活内测资格](betaTestV2/使用邀请码激活内测资格.md)
+    * [分页查看邀请码使用记录](betaTestV2/分页查看邀请码使用记录.md)
 * [存储空间v2](storage/README.md)
     * [创建bucket](storage/创建bucket.md)
     * [查询bucket列表](storage/查询bucket列表.md)
