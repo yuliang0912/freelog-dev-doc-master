@@ -13,7 +13,7 @@ https://api.freelog.com/v1/storages/files/{sha1}/property
 | 参数 | 必选 | 类型及范围 | 说明 |
 | :--- | :--- | :--- | :--- |
 | sha1 | 必选 | string | 文件的sha1值,多个用逗号分隔 |
-
+| resourceType | 必选 | string | 资源类型 |
 
 ### 返回说明：
 
