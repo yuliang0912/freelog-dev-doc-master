@@ -22,7 +22,7 @@
     * [获取图片验证码](messageV2/获取图片验证码.md)
     * [校验图片验证码](messageV2/校验图片验证码.md)
     * [发送短信或邮件验证码](messageV2/发送短信或邮件验证码.md)
-* 邀请码V2
+* [邀请码V2](betaTestV2/README.md)
     * [批量生成邀请码](betaTestV2/批量生成邀请码.md)
     * [批量修改邀请码](betaTestV2/批量修改邀请码.md)
     * [分页查看邀请码列表](betaTestV2/分页查看邀请码列表.md)
