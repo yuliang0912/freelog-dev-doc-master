@@ -19,6 +19,7 @@
     * [删除标签](userV2/查看标签列表.md)
     * [设置用户标签](userV2/设置用户标签.md)
     * [取消用户标签](userV2/取消用户标签.md)
+    * [冻结或恢复用户](userV2/冻结或恢复用户.md)
 * [短信或邮件验证码V2](verification-code/README.md)
     * [获取图片验证码](messageV2/获取图片验证码.md)
     * [校验图片验证码](messageV2/校验图片验证码.md)
