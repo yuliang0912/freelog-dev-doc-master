@@ -127,6 +127,7 @@
     * [切换展品版本](presentableV2/切换展品版本.md)
     * [设置展品自定义属性](presentableV2/设置展品自定义属性.md)
     * [获取展品授权信息](presentableV2/获取展品授权信息.md)
+    * [搜索展品列表](presentableV2/搜索展品列表.md)
 * [用户账号](user/README.md)
     * [用户登录](user/用户登录.md)
     * [用户登出](user/用户登出.md)
