@@ -131,6 +131,7 @@
     * [获取展品授权信息](presentableV2/获取展品授权信息.md)
     * [搜索展品列表](presentableV2/搜索展品列表.md)
     * [批量获取展品授权结果](presentableV2/批量获取展品授权结果.md)
+    * [查看合约应用的展品列表](presentableV2/查看合约应用的展品列表.md)
 * [测试节点V2](testNodeV2/README.md)
     * [分页获取测试资源列表](testNodeV2/分页获取测试资源列表.md)
     * [创建节点测试规则](testNodeV2/创建节点测试规则.md)
