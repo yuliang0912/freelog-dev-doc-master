@@ -147,7 +147,7 @@
     * [重新匹配节点测试规则](testNodeV2/重新匹配节点测试规则.md)
 * [合同事件执行V2](contract-event-v2/README.md)
     * [交易事件](contract-event-v2/交易事件.md)
-* [支付V2](pay-v2/README.md)
+* [支付V2](payV2/README.md)
     * [分页查询账户交易流水](payV2/分页查询账户交易流水.md)
     * [查看用户个人账户信息](payV2/查看用户个人账户信息.md)
     * [激活个人账户](payV2/激活个人账户.md)
