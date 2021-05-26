@@ -125,6 +125,7 @@
     * [查询展品分页列表](presentableV2/查询展品分页列表.md)
     * [批量查询展品列表](presentableV2/批量查询展品列表.md)
     * [查看展品依赖树](presentableV2/查看展品依赖树.md)
+    * [查看展品关系树](presentableV2/查看展品关系树.md)
     * [查看展品授权树](presentableV2/查看展品授权树.md)
     * [切换展品版本](presentableV2/切换展品版本.md)
     * [设置展品自定义属性](presentableV2/设置展品自定义属性.md)
