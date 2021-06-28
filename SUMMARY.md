@@ -136,6 +136,7 @@
 * [测试节点V2](testNodeV2/README.md)
     * [分页获取测试资源列表](testNodeV2/分页获取测试资源列表.md)
     * [创建节点测试规则](testNodeV2/创建节点测试规则.md)
+    * [批量查询测试资源列表](testNodeV2/批量查询测试资源列表.md)
     * [搜索测试资源依赖树](testNodeV2/搜索测试资源依赖树.md)
     * [追加节点的测试规则](testNodeV2/追加节点的测试规则.md)
     * [查看节点当前测试规则](testNodeV2/查看节点当前测试规则.md)
