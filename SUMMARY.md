@@ -104,6 +104,7 @@
     * [查看合同分页列表](contractV2/查看合同分页列表.md)
     * [批量查询合同列表](contractV2/批量查询合同列表.md)
     * [查看用户签约数量](contractV2/查看用户签约数量.md)
+	* [查看合同流转记录分页列表](collectionV2/查看合同流转记录分页列表.md)
 * [节点v2](nodeV2/README.md)
     * [创建节点](nodeV2/创建节点.md)
     * [查看节点详情](nodeV2/查看节点详情.md)
