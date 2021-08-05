@@ -1,4 +1,4 @@
-# Summary
+﻿# Summary
 
 * [简介](README.md)
 * [用户V2](userV2/README.md)
@@ -150,6 +150,7 @@
     * [获取测试资源授权信息](testNodeV2/获取测试资源授权信息.md)
     * [重新匹配节点测试规则](testNodeV2/重新匹配节点测试规则.md)
     * [节点测试规则预执行](testNodeV2/节点测试规则预执行.md)
+    * [批量获取测试资源授权结果](testNodeV2/批量获取测试资源授权结果.md)
 * [合同事件执行V2](contract-event-v2/README.md)
     * [交易事件](contract-event-v2/交易事件.md)
 * [支付V2](payV2/README.md)
