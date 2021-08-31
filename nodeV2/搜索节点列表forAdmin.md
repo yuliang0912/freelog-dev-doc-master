@@ -20,7 +20,7 @@ https://api.freelog.com/v2/nodes/search
 
 | 参数 | 必选 | 类型及范围 | 说明 |
 | :--- | :--- | :--- | :--- |
-| skip | 可选 | int  | 跳过的数量.默认为0.                      |
+| skip | 可选 | int  | 跳过的数量.默认为0.  |
 | limit | 可选| int  | 本次请求获取的数据条数.一般不允许超过100 |
 | status | 可选 | int| 节点状态(0:正常 1:冻结) |
 | keywords | 可选 | string | 搜索关键字,目前支持节点域名和节点名称 |
@@ -41,12 +41,9 @@ https://api.freelog.com/v2/nodes/search
 | nodeThemeId | string | 节点主题展品ID |
 | ownerUserId | int | 节点所有者ID |
 | ownerUserName | string | 节点所有者名称 |
-| status | int | 节点状态(0:未发布 1:已发布 2:系统冻结) |
+| status | int | 节点状态(1:下线 2:上线 4:冻结) |
 | createDate | date | 创建日期 |
-| tags | object[] | 标签信息 |
-| ** tagId | int | 标签ID |
-| ** tagName | string | 标签名称 |
-
+| tags | string[] | 标签信息 |
 
 
 ### 示例
@@ -62,22 +59,18 @@ https://api.freelog.com/v2/nodes/search
 		"limit": 10,
 		"totalItem": 1,
 		"dataList": [{
-			"nodeThemeId": "",
-			"status": 0,
+			"nodeThemeId": "60a2242d4bc413003472674a",
+			"tags": ["tag2", "tag1", "tag3", "tag4"],
+			"auditStatus": 0,
+			"status": 2,
 			"nodeId": 80000000,
-			"nodeName": "我的小节点",
-			"nodeDomain": "xiaoxiao",
-			"ownerUserId": 50021,
-			"ownerUserName": "yuliang",
-			"createDate": "2020-09-23T06:19:20.280Z",
-			"updateDate": "2020-09-23T06:19:20.280Z",
-			"tags": [{
-				"tagId": 3,
-				"tag": "tag3"
-			}, {
-				"tagId": 4,
-				"tag": "节点标签2"
-			}]
+			"nodeName": "节点01",
+			"nodeDomain": "node-01",
+			"ownerUserId": 50028,
+			"ownerUserName": "12345676789",
+			"createDate": "2020-10-12T09:16:28.919Z",
+			"updateDate": "2021-08-30T07:47:09.952Z",
+			"pageBuildId": "60a2242d4bc413003472674a"
 		}]
 	}
 }
