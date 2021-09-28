@@ -5,7 +5,7 @@
 ### 接口地址:
 
 ```
-https://api.freelog.com/v1/storages/files/{sha1}/property
+https://api.freelog.com/v2/storages/files/{sha1}/property
 ```
 
 ### 传入参数说明:

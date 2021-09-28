@@ -1,4 +1,4 @@
-﻿# Summary
+# Summary
 
 * [简介](README.md)
 * [用户V2](userV2/README.md)
@@ -64,6 +64,7 @@
     * [批量查询存储对象列表](storage/批量查询存储对象列表.md)
     * [根据sha1和类型获取文件属性](storage/根据sha1和类型获取文件属性.md)
     * [对象依赖循环性检查](storage/对象依赖循环性检查.md)
+    * [删除用户节点数据对象](storage/删除用户节点数据对象.md)
 * [资源v2](resourceV2/README.md)
     * [创建资源](resourceV2/创建资源.md)
     * [更新资源信息](resourceV2/更新资源信息.md)

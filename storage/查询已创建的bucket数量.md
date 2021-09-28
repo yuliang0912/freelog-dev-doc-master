@@ -5,7 +5,7 @@
 ### 接口地址:
 
 ```
-https://api.freelog.com/v1/storages/buckets/Count
+https://api.freelog.com/v2/storages/buckets/Count
 ```
 
 

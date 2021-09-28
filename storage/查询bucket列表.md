@@ -5,7 +5,7 @@
 ### 接口地址:
 
 ```
-https://api.freelog.com/v1/storages/buckets?bucketType={bucketType}
+https://api.freelog.com/v2/storages/buckets?bucketType={bucketType}
 ```
 
 ### 传入参数说明:

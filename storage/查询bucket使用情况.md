@@ -6,7 +6,7 @@
 ### 接口地址:
 
 ```
-https://api.freelog.com/v1/storages/buckets/spaceStatistics
+https://api.freelog.com/v2/storages/buckets/spaceStatistics
 ```
 
 ### 返回说明：
