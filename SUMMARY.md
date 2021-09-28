@@ -49,6 +49,7 @@
     * [查询bucket是否存在](storage/查询bucket是否存在.md)
     * [查询bucket详情](storage/查询bucket详情.md)
     * [分页查看存储对象列表](storage/分页查看存储对象列表.md)
+    * [分页查看用户节点数据列表](storage/分页查看用户节点数据列表.md)
     * [创建存储对象](storage/创建存储对象.md)
     * [查看存储对象详情](storage/查看存储对象详情.md)
     * [创建用户节点数据对象](storage/创建用户节点数据对象.md)
