@@ -93,6 +93,7 @@
     * [查看资源关系树](resourceV2/查看资源关系树.md)
     * [查看含授权的资源关系树](resourceV2/查看含授权的资源关系树.md)
     * [查看资源创建数量](resourceV2/查看资源创建数量.md)
+    * [搜索关键字智能提示](resourceV2/搜索关键字智能提示.md)
 * [资源解压缩V2](resource-decompressionV2/取资源文件.md)
 * [收藏资源v2](collectionV2/README.md)
     * [收藏资源](collectionV2/收藏资源.md)
