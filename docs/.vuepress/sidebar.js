@@ -239,5 +239,19 @@ module.exports = [
         children: [
             {title: '领取免费羽币', path: 'activityV2/领取免费羽币.md'}
         ]
+    },
+    {
+        title: '业务逻辑说明',
+        collapsable: true,
+        children: [
+            {title: '展品授权说明', path: '业务逻辑说明/presentable授权说明.md'}
+        ]
+    },
+    {
+        title: '附表',
+        collapsable: true,
+        children: [
+            {title: '展品授权说明', path: '业务逻辑说明/presentable授权说明.md'}
+        ]
     }
 ]
