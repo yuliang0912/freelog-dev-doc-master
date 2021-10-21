@@ -1,18 +1,18 @@
 {
-  "name": "demo",
+  "name": "freelog-pay-service",
   "version": "1.0.0",
-  "description": "## 约定",
-  "main": "index.js",
+  "description": "freelog-pay-service",
+  "private": true,
   "dependencies": {
-    "gitbook-plugin-theme-mobdoc": "^7.1.0",
-    "gitbook-plugin-toggle-chapters": "0.0.3",
-    "uid": "0.0.2"
+    "vuepress": "^1.8.2"
   },
-  "devDependencies": {},
   "scripts": {
-    "start": "gitbook serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node scripts/start.js",
+    "build": "node scripts/build.js",
+    "test": "node scripts/test.js",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "anonymous",
+  "license": "MIT"
 }

@@ -1,7 +1,0 @@
-{
-    "plugins": [
-        "theme-mobdoc",
-        "github-tables",
-        "highlight"
-    ]
-}
