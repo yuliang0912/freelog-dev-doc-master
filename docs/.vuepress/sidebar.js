@@ -244,14 +244,27 @@ module.exports = [
         title: '业务逻辑说明',
         collapsable: true,
         children: [
-            {title: '展品授权说明', path: '业务逻辑说明/presentable授权说明.md'}
+            {title: '展品授权说明', path: '业务逻辑说明/展品授权说明.md'}
         ]
     },
     {
         title: '附表',
         collapsable: true,
         children: [
-            {title: '展品授权说明', path: '业务逻辑说明/presentable授权说明.md'}
+            {title: 'retCode', path: '附表/一级状态码.md'},
+            {title: 'errCode', path: '附表/二级状态码.md'},
+            {title: '用户角色', path: '附表/用户角色.md'},
+            {title: '资源类型', path: '附表/资源类型.md'},
+            {title: '合同相关枚举说明', path: '附表/合同相关枚举说明.md'},
+            {title: '账户类型', path: '附表/账户类型.md'},
+            {title: '货币类型', path: '附表/货币类型.md'},
+            {title: '交易类型', path: '附表/交易类型.md'},
+            {title: '交易类型', path: '附表/交易类型.md'},
+            {title: 'bucketName格式', path: '附表/bucketName格式.md'},
+            {title: '授权服务状态码', path: '附表/授权服务状态码.md'},
+            {title: '资源meta说明', path: '附表/资源meta说明.md'},
+            {title: '授权策略分组说明', path: '附表/授权策略分组说明.md'},
+            {title: '授权策略分组说明', path: '附表/授权策略分组说明.md'}
         ]
     }
 ]
