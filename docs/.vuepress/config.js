@@ -1,4 +1,4 @@
-const sidebar = require('./sidebar')
+const sidebar = require('./menu')
 
 module.exports = {
     title: '后端API接口文档',
@@ -12,7 +12,8 @@ module.exports = {
         }]
     ],
     markdown: {
-        lineNumbers: true
+        lineNumbers: true,
+        toc: {includeLevel: [1, 2]},
     },
     themeConfig: {
         logo: '/logo.svg',
