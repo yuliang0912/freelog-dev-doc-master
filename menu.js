@@ -184,6 +184,8 @@ module.exports = [
         collapsable: true,
         children: [
             {title: '查询展品分页列表', path: 'runtime/查询展品分页列表.md'},
+            {title: '批量查询展品列表', path: 'runtime/批量查询展品列表.md'},
+            {title: '查询展品详细信息', path: 'runtime/查询展品详细信息.md'},
             {title: '获取展品授权信息', path: 'runtime/获取标准展品授权信息.md'},
             {title: '批量获取展品授权结果', path: 'runtime/批量获取标准展品授权结果.md'}
         ]
