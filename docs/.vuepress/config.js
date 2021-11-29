@@ -1,4 +1,4 @@
-const sidebar = require('./menu')
+const sidebar = require('../../menu')
 
 module.exports = {
     title: '后端API接口文档',
