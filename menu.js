@@ -180,6 +180,15 @@ module.exports = [
         ]
     },
     {
+        title: '前端运行时',
+        collapsable: true,
+        children: [
+            {title: '查询展品分页列表', path: 'runtime/查询展品分页列表.md'},
+            {title: '获取展品授权信息', path: 'runtime/获取标准展品授权信息.md'},
+            {title: '批量获取展品授权结果', path: 'runtime/批量获取标准展品授权结果.md'}
+        ]
+    },
+    {
         title: '展品信息',
         collapsable: true,
         children: [
@@ -196,10 +205,8 @@ module.exports = [
             {title: '设置展品自定义属性', path: 'presentableV2/设置展品自定义属性.md'},
             {title: '搜索展品列表', path: 'presentableV2/搜索展品列表.md'},
             {title: '查看合约应用的展品列表', path: 'presentableV2/查看合约应用的展品列表.md'},
-            {title: '获取展品授权信息(旧)', path: 'presentableV2/获取展品授权信息.md'},
-            {title: '批量获取展品授权结果(旧)', path: 'presentableV2/批量获取展品授权结果.md'},
-            {title: '获取展品授权信息(新)', path: 'presentableV2/获取标准展品授权信息.md'},
-            {title: '批量获取展品授权结果(新)', path: 'presentableV2/批量获取标准展品授权结果.md'},
+            {title: '获取展品授权信息', path: 'presentableV2/获取展品授权信息.md'},
+            {title: '批量获取展品授权结果', path: 'presentableV2/批量获取展品授权结果.md'},
         ]
     },
     {
