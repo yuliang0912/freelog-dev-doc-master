@@ -279,5 +279,13 @@ module.exports = [
             {title: '授权策略分组说明', path: '附表/授权策略分组说明.md'},
             {title: '授权策略分组说明', path: '附表/授权策略分组说明.md'}
         ]
+    },
+    {
+        title: '策略',
+        collapsable: true,
+        children: [
+            {title: '策略', path: '策略/策略.md'},
+            {title: '组合', path: '策略/组合.md'}
+        ]
     }
 ]
