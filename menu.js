@@ -31,6 +31,7 @@ module.exports = [
             {title: '查看资源创建数量', path: 'resourceV2/查看资源创建数量.md'},
             {title: '搜索关键字智能提示', path: 'resourceV2/搜索关键字智能提示.md'},
             {title: '获取资源解压文件', path: 'resourceV2/获取资源解压文件.md'},
+            {title: '批量查询资源授权结果', path: 'resourceV2/批量查询资源授权结果.md'},
         ]
     },
     {
