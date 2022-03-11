@@ -269,6 +269,7 @@ module.exports = [
             {title: 'retCode', path: '附表/一级状态码.md'},
             {title: 'errCode', path: '附表/二级状态码.md'},
             {title: '用户角色', path: '附表/用户角色.md'},
+			{title: '用户状态', path: '附表/用户状态.md'},
             {title: '资源类型', path: '附表/资源类型.md'},
             {title: '合同相关枚举说明', path: '附表/合同相关枚举说明.md'},
             {title: '账户类型', path: '附表/账户类型.md'},
