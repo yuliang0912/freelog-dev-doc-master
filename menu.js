@@ -245,7 +245,9 @@ module.exports = [
             {title: '激活个人账户', path: 'payV2/激活个人账户.md'},
             {title: '修改交易密码', path: 'payV2/修改交易密码.md'},
             {title: '重置交易密码', path: 'payV2/重置交易密码.md'},
-            {title: '校验交易密码', path: 'payV2/校验交易密码.md'}
+            {title: '校验交易密码', path: 'payV2/校验交易密码.md'},
+            {title: '批量查询用户交易次数', path: 'payV2/批量查询用户交易次数.md'},
+            {title: '批量查询用户账户信息', path: 'payV2/批量查询用户账户信息.md'},
         ]
     },
     {
