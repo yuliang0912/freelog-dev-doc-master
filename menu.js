@@ -54,6 +54,7 @@ module.exports = [
             {title: '查看标签列表', path: 'userV2/查看标签列表.md'},
             {title: '设置用户标签', path: 'userV2/设置用户标签.md'},
             {title: '取消用户标签', path: 'userV2/取消用户标签.md'},
+            {title: '批量设置用户标签', path: 'userV2/批量设置用户标签.md'},
             {title: '修改用户详细信息', path: 'userV2/修改用户详细信息.md'},
             {title: '冻结或恢复用户', path: 'userV2/冻结或恢复用户.md'},
             {title: '校验当前登录用户的密码', path: 'userV2/校验当前登录用户的密码.md'},
