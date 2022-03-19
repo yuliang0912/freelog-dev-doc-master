@@ -32,6 +32,9 @@ module.exports = [
             {title: '搜索关键字智能提示', path: 'resourceV2/搜索关键字智能提示.md'},
             {title: '获取资源解压文件', path: 'resourceV2/获取资源解压文件.md'},
             {title: '批量查询资源授权结果', path: 'resourceV2/批量查询资源授权结果.md'},
+            {title: '创建资源标签', path: 'resourceV2/创建资源标签.md'},
+            {title: '分页查看资源标签列表', path: 'resourceV2/分页查看资源标签列表.md'},
+            {title: '批量更新资源标签', path: 'resourceV2/批量更新资源标签.md'},
         ]
     },
     {
