@@ -221,6 +221,7 @@ module.exports = [
             {title: '查看合约应用的展品列表', path: 'presentableV2/查看合约应用的展品列表.md'},
             {title: '获取展品授权信息', path: 'presentableV2/获取展品授权信息.md'},
             {title: '批量获取展品授权结果', path: 'presentableV2/批量获取展品授权结果.md'},
+            {title: '批量查询节点创建的展品数量', path: 'presentableV2/批量查询节点创建的展品数量.md'},
         ]
     },
     {

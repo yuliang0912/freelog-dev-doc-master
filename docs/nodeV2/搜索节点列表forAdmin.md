@@ -25,6 +25,7 @@ https://api.freelog.com/v2/nodes/search
 | status | 可选 | int| 节点状态(0:正常 1:冻结) |
 | keywords | 可选 | string | 搜索关键字,目前支持节点域名和节点名称 |
 | tags | 可选 | string | 标签,多个用逗号分隔 |
+| ownerUserId | 可选 | int | 节点所有者ID |
 | startCreateDate | 可选 | date | 起始注册时间 |
 | endCreateDate | 可选 | date | 截止注册时间 |
 | projection | 可选 | string | 指定返回的字段,多个用逗号分隔 |
