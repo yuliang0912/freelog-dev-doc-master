@@ -145,7 +145,7 @@ module.exports = [
         children: [
             {title: '创建授权策略', path: 'policyV2/创建授权策略.md'},
             {title: '批量获取授权策略列表', path: 'policyV2/批量获取授权策略列表.md'},
-            {title: '查看授权策略详情', path: 'policyV2/查看授权策略详情.md'}
+            {title: '查看授权策略详情', path: 'policyV2/查看授权策略详情.md'},
         ]
     },
     {
@@ -160,7 +160,8 @@ module.exports = [
             {title: '查看用户签约数量', path: 'contractV2/查看用户签约数量.md'},
             {title: '统计标的物签约量', path: 'contractV2/统计标的物签约量.md'},
             {title: '查看标的物签约数量', path: 'contractV2/查看标的物签约数量.md'},
-            {title: '查看合同流转记录分页列表', path: 'contractV2/查看合同流转记录分页列表.md'}
+            {title: '查看合同流转记录分页列表', path: 'contractV2/查看合同流转记录分页列表.md'},
+            {title: '统计甲方的标的物签约量', path: 'contractV2/统计甲方的标的物签约量.md'},
         ]
     },
     {
