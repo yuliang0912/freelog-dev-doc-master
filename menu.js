@@ -188,7 +188,8 @@ module.exports = [
             {title: '批量设置或移除节点标签', path: 'nodeV2/批量设置或移除节点标签.md'},
             {title: '批量统计节点标签使用数量', path: 'nodeV2/批量统计节点标签使用数量.md'},
             {title: '冻结节点', path: 'nodeV2/冻结节点.md'},
-            {title: '解冻节点', path: 'nodeV2/解封节点.md'}
+            {title: '解冻节点', path: 'nodeV2/解封节点.md'},
+			{title: '批量查询节点冻结记录', path: 'nodeV2/批量查询节点冻结记录.md'},
         ]
     },
     {
