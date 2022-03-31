@@ -262,6 +262,7 @@ module.exports = [
             {title: '批量查询用户交易次数', path: 'payV2/批量查询用户交易次数.md'},
             {title: '批量查询用户账户信息', path: 'payV2/批量查询用户账户信息.md'},
 			{title: '分页查询账户交易记录', path: 'payV2/分页查询账户交易记录.md'},
+			{title: '根据交易记录查询交易流水', path: 'payV2/根据交易记录查询交易流水.md'},
         ]
     },
     {
